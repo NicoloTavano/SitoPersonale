@@ -6,9 +6,9 @@ Esempio di pubblicazione da GitHub a Netlify
 
 ## Dati necessari
 
-- ACME Novara : anno accademico 20XX-20XX
+- ACME Novara : anno accademico 2024-2025
 - __Corso__: WebDesign
-- __Studente__: XXXXXX YYYYY
+- __Studente__: Tavano Nicolò
 - __Docente__: Matteo Baccan
 
 ## Indirizzo di pubblicazione Netlify
