@@ -59,23 +59,6 @@
             color: #fff;
             text-decoration: none;
         }
-        #chisono {
-            background-color: #f6b1b1;
-            margin-top: 100px;
-        }
-        #portfolio {
-            margin-top: 10px;
-        }
-        footer {
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            padding: 10px;
-            position: fixed;
-            bottom: 0;
-            left: 0;
-            width: 100%;
-        }
         /* Media queries */
         @media (max-width: 768px) {
             /* Navbar toggle */
@@ -108,12 +91,19 @@
             }
         }
     </style>
+    <style>
+        #titoloprincipale {
+            text-align: center;
+            font-size: 30px;
+            color: red;
+        }
+    </style>
 </head>
 <body>
     <nav class="navbar">
         <div class="navbar-container">
             <div class="navbar-logo">
-                <a href="#"><img src="http://via.placeholder.com/60x60"></a>
+                <a href="#">Logo-new</a>
             </div>
             <div class="navbar-toggle">
                 <span></span>
@@ -130,49 +120,6 @@
             </div>
         </div>
     </nav>
-    <div id="chisono">
-        <img src="http://via.placeholder.com/400x100">
-    </div>
-    <div id="portfolio">
-        <div>
-            <img src="http://via.placeholder.com/400x100">
-        </div>
-        <div>
-            bla bla bla bla
-        </div>
-    </div>
-    <div id="contatti">
-        <form name="contatti" method="POST" data-netlify="true">
-            <input type="hidden" name="subject" value="Nuovi dati ricevuti dalla form %{formName} (%{submissionId})" />
-            <!-- form group   -->
-            <div class="form-group">
-                <label for="nome">Nome</label>
-                <input type="text" name="nome" id="nome" class="form-control"
-                    placeholder="Inserisci il tuo nome: ci aiuterà a ricordarci come ti chiami">
-            </div>
-            <!-- form group   -->
-            <div class="form-group">
-                <label for="email">Email</label>
-                <input type="email" name="email" id="email" class="form-control"
-                    placeholder="Inserisci la tua email: ci permetterà di risponderti">
-            </div>
-            <!-- form group   -->
-            <div class="form-group">
-                <label for="messaggio">Commento</label>
-                <textarea name="messaggio" id="messaggio" class="form-control"
-                    placeholder="Inserisci il motivo del tuo contatto"></textarea>
-            </div>
-            <br />
-            <div data-netlify-recaptcha="true"></div>
-            <br />
-            <div class="form-group">
-                <button type="submit" class="btn btn-primary">Invia</button>
-            </div>
-        </form>
-    </div>
-    <footer>
-        <p>&copy; 2022 - Esempi per corso di WebDesign</p>
-    </footer>
     <script>
         // Navbar toggle
         const navbarToggle = document.querySelector('.navbar-toggle');
@@ -181,5 +128,21 @@
             navbarMenu.classList.toggle('active');
         });
     </script>
+    <div style="outline: 1px solid black;margin-top: 80px;">
+        ci sarà uno slider
+    </div>
+    <div style="outline: 1px solid;">
+        <h1 id="titoloprincipale">Titolo</h1>
+        <p>Loreem ipsuim .....Loreem ipsuim .....Loreem ipsuim .....Loreem ipsuim 
+            .....Loreem ipsuim .....Loreem ipsuim .....Loreem ipsuim .....</p>
+    </div>
+    <div style="outline: 1px solid;">
+        <div style="outline: 1px solid red; float: left; width:50%; height: 200px;">sinistra</div>
+        <div style="outline: 1px solid green; float: right; width:50%;height: 200px;">
+            <h2>titolo</h2>
+            <p>destra</p>
+        </div>
+    </div>
+    <div style=" text-align: center;">Footer</div>
 </body>
 </html>
