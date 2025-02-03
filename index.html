@@ -1,148 +1,25 @@
 <!DOCTYPE html>
 <html lang="it">
-<!-- ChatGPT: mi puoi creare un nav responsive in html5, con posizionamento fisso nel top della pagina e un'icona per l'apertura e chiusura del menu -->
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nav responsive</title>
-    <style>
-        /* Navbar container */
-        .navbar {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            background-color: #333;
-            color: #fff;
-            z-index: 1000;
-        }
-        /* Navbar container inner */
-        .navbar-container {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 10px 20px;
-        }
-        /* Navbar logo */
-        .navbar-logo a {
-            color: #fff;
-            font-size: 24px;
-            font-weight: bold;
-        }
-        /* Navbar toggle */
-        .navbar-toggle {
-            display: none;
-            cursor: pointer;
-        }
-        .navbar-toggle span {
-            display: block;
-            width: 20px;
-            height: 2px;
-            background-color: #fff;
-            margin: 5px 0;
-        }
-        /* Navbar menu */
-        .navbar-menu ul {
-            display: flex;
-            justify-content: flex-end;
-            align-items: center;
-            list-style: none;
-            margin: 0;
-            padding: 0;
-        }
-        .navbar-menu li {
-            margin-left: 20px;
-        }
-        .navbar-menu a {
-            color: #fff;
-            text-decoration: none;
-        }
-        /* Media queries */
-        @media (max-width: 768px) {
-            /* Navbar toggle */
-            .navbar-toggle {
-                display: block;
-            }
-            /* Navbar menu */
-            .navbar-menu {
-                display: none;
-                position: absolute;
-                top: 60px;
-                left: 0;
-                width: 100%;
-                background-color: #333;
-                padding: 10px 20px;
-            }
-            .navbar-menu ul {
-                flex-direction: column;
-            }
-            .navbar-menu li {
-                margin-left: 0;
-                margin-bottom: 10px;
-            }
-            .navbar-menu a {
-                font-size: 18px;
-            }
-            /* Navbar menu active */
-            .navbar-menu.active {
-                display: block;
-            }
-        }
-    </style>
-    <style>
-        #titoloprincipale {
-            text-align: center;
-            font-size: 30px;
-            color: red;
-        }
-    </style>
+<meta charset="UTF-8"> 
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nic Graphic</title>
 </head>
+
 <body>
-    <nav class="navbar">
-        <div class="navbar-container">
-            <div class="navbar-logo">
-                <a href="#">Logo-new</a>
-            </div>
-            <div class="navbar-toggle">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-            <div class="navbar-menu">
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Chi siamo</a></li>
-                    <li><a href="#">Servizi</a></li>
-                    <li><a href="#">Contatti</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-    <script>
-        // Navbar toggle
-        const navbarToggle = document.querySelector('.navbar-toggle');
-        const navbarMenu = document.querySelector('.navbar-menu');
-        navbarToggle.addEventListener('click', () => {
-            navbarMenu.classList.toggle('active');
-        });
-    </script>
-    <div style="outline: 1px solid black;margin-top: 80px;">
-        ci sarà uno slider
-    </div>
-    <div style="outline: 1px solid;">
-        <h1 id="titoloprincipale">Titolo</h1>
-        <p>Loreem ipsuim .....Loreem ipsuim .....Loreem ipsuim .....Loreem ipsuim 
-            .....Loreem ipsuim .....Loreem ipsuim .....Loreem ipsuim .....</p>
-    </div>
-    <div style="outline: 1px solid;">
-        <div style="outline: 1px solid red; float: left; width:50%; height: 200px;">sinistra</div>
-        <div style="outline: 1px solid green; float: right; width:50%;height: 200px;">
-            <h2>titolo</h2>
-            <p>destra</p>
-        </div>
-    </div>
-    <div style=" text-align: center;">Footer</div>
+    
+<div>
+    [logo] [chi siamo] [i miei lavori] [modulo di contatti] [dove sono]
+</div>
+    
+<div id="chisiamo"></div>
+<div id="imieilavori"></div>
+<div id="contatti"></div>
+<div id="dovesono"></div>
+
+<div id="footer">tel:xxxx indirizzo:piva link:coockiepolicy link:pr</div>
+
 </body>
+
 </html>
