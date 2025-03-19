@@ -2,57 +2,116 @@
 <html lang="it">
 
 <head>
-<meta charset="UTF-8"> 
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Nic Graphic</title>
-<link href="https://fonts.cdnfonts.com/css/lemon-milk" rel="stylesheet">
-<link href="styles.css" rel="stylesheet">
-<style>
-    body{
-        background-image: url('sfondo.jpg');
-    }
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nic Graphic Portfolio</title>
+    <link href="https://fonts.cdnfonts.com/css/lemon-milk" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+    <style>
+        body {
+            background-image: url('sfondo.jpg');
+            background-size: cover;
+            background-attachment: fixed;
+            color: rgb(0, 0, 0);
+            font-family: 'Bahnschrift';
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .container {
+            width: 80%;
+            max-width: 1000px;
+        }
+
+        .section {
+            background: rgba(255, 255, 255, 0.8);
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px 0;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            font-family: 'LEMON MILK', sans-serif;
+            text-align: center;
+        }
+
+        #fotopersonale {
+            display: block;
+            margin: 0 auto;
+            border-radius: 100%;
+        }
+
+        nav {
+            background: rgba(0, 0, 0, 0.8);
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 18px;
+        }
+
+        #footer {
+            text-align: center;
+            padding: 10px;
+            background: rgba(0, 0, 0, 0.8);
+            color: white;
+            margin-top: 20px;
+        }
+    </style>
 </head>
 
 <body>
-    
-<div>
-    [logo] [chi sono] [i miei lavori] [modulo di contatti] [dove sono]
-</div>
-    
-<div id="chisono">
-    <h2>Chi sono</h2>
-    <img id="fotopersonale" src="jpg/Nicolò 2 HD (1).jpg" alt="Nicolò" height="100">
-    <p class="paragrafo">Il mio nome è Tavano Nicolò, 
-        Ho 21 anni, sono un graphic designer che ha come obiettivo quello di trasformare le tue idee in realtà.
-        Mi considero un ragazzo molto preciso e atttento ai dettagli, determinato e disposto a imparare e migliorare ad ogni passo del suo percorso.
-        Oltre alla grafica ho diverse passioni come per il disegno e per il mondo anime/manga.
-        </p>
-</div>
+    <nav>
+        <a href="#chisono">Chi sono</a>
+        <a href="#imieilavori">I miei lavori</a>
+        <a href="#contatti">Contatti</a>
+        <a href="#dovesono">Dove sono</a>
+    </nav>
 
-<div id="imieilavori">
-    <h2>I miei lavori</h2>
-    <p class="paragrafo">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
-        been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
-        and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap
-        into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the
-        release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing
-        software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-</div>
+    <div class="container">
+        <div id="chisono" class="section">
+            <h2>Chi sono</h2>
+            <img id="fotopersonale" src="jpg/Nicolò 2 HD (1).jpg" alt="Nicolò" height="150">
+            <p>Il mio nome è Tavano Nicolò, ho 21 anni e sono un graphic designer che trasforma idee in realtà. Mi considero preciso, attento ai dettagli e sempre desideroso di migliorarmi.</p>
+        </div>
 
-<div id="contatti">
-    <h2>Contatti</h2>
-    <form>
-        -----------
-    </form>
-</div>
+        <div id="imieilavori" class="section">
+            <h2>I miei lavori</h2>
+            <p>Una selezione dei miei lavori più recenti, dove metto in pratica creatività e competenze per offrire soluzioni visive efficaci.</p>
+        </div>
 
-<div id="dovesono">
-    mappa di google maps
-</div>
+        <div id="contatti" class="section">
+            <h2>Contatti</h2>
+            <form>
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required><br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br>
+                <label for="messaggio">Messaggio:</label>
+                <textarea id="messaggio" name="messaggio" required></textarea><br>
+                <button type="submit">Invia</button>
+            </form>
+        </div>
 
-<div id="footer">tel:xxxx indirizzo:piva link:coockiepolicy link:pr</div>
+        <div id="dovesono" class="section">
+            <h2>Dove sono</h2>
+            <p>Qui puoi trovare la mia posizione su Google Maps.</p>
+        </div>
+    </div>
 
+    <div id="footer">
+        <p>Tel: XXXX | Indirizzo: XXXXX | <a href="#">Cookie Policy</a> | <a href="#">Privacy</a></p>
+    </div>
 </body>
 
 </html>
+
+
