@@ -245,6 +245,7 @@ button:hover {
 
 /* css footer */
 #footer {
+    width: 100%; /* Occupa tutta la larghezza della pagina */
     background: rgba(0, 0, 0, 0.9);
     color: white;
     padding: 30px 10px;
@@ -254,14 +255,16 @@ button:hover {
 
 .footer-container {
     display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    gap: 20px;
+    justify-content: space-between; /* Spazia uniformemente le colonne */
+    flex-wrap: wrap; /* Permette di adattarsi ai dispositivi più piccoli */
+    max-width: 1200px; /* Limita la larghezza su schermi molto grandi */
+    margin: 0 auto; /* Centra il contenuto */
+    padding: 0 20px;
 }
 
 .footer-column {
-    flex: 1;
-    min-width: 200px;
+    flex: 1; /* Adatta la dimensione delle colonne in base allo spazio disponibile */
+    min-width: 250px; /* Evita che le colonne diventino troppo strette */
     text-align: left;
 }
 
