@@ -98,7 +98,7 @@
             margin-top: 20px;
         }
 
-        
+
      /* css i miei lavori */
     .carousel-container {
             position: relative;
@@ -240,6 +240,63 @@ button:hover {
 }
 /* css contatti */
 
+
+
+
+/* css footer */
+#footer {
+    background: rgba(0, 0, 0, 0.9);
+    color: white;
+    padding: 30px 10px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.footer-column {
+    flex: 1;
+    min-width: 200px;
+    text-align: left;
+}
+
+.footer-column h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #ff6b6b;
+}
+
+.footer-column p, .footer-column a {
+    color: #ddd;
+    text-decoration: none;
+    display: block;
+    margin: 5px 0;
+    transition: 0.3s;
+}
+
+.footer-column a:hover {
+    color: #ff6b6b;
+}
+
+.footer-column i {
+    margin-right: 8px;
+}
+
+.footer-bottom {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #aaa;
+}
+/* css footer */
+
+
+
+
     </style>
 </head>
 
@@ -353,9 +410,36 @@ button:hover {
         </div>
         
 
-    <div id="footer">
-        <p>Tel: XXXX | Indirizzo: XXXXX | <a href="#">Cookie Policy</a> | <a href="#">Privacy</a></p>
-    </div>
+        <footer id="footer">
+            <div class="footer-container">
+                <!-- Colonna 1: Informazioni di contatto -->
+                <div class="footer-column">
+                    <h3>Contatti</h3>
+                    <p><i class="fas fa-phone"></i> Tel: XXXX</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Indirizzo: XXXXX</p>
+                </div>
+        
+                <!-- Colonna 2: Link Utili -->
+                <div class="footer-column">
+                    <h3>Link Utili</h3>
+                    <a href="#">Cookie Policy</a>
+                    <a href="#">Privacy Policy</a>
+                </div>
+        
+                <!-- Colonna 3: Social Media -->
+                <div class="footer-column">
+                    <h3>Seguimi</h3>
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        
+            <p class="footer-bottom">© 2024 Nic Graphic Portfolio. Tutti i diritti riservati.</p>
+        </footer>
+        
+
+
 </body>
 
 </html>
