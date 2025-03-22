@@ -39,6 +39,31 @@
             text-align: center;
         }
 
+        header {
+    width: 100%;
+    background: rgba(0, 0, 0, 0.9);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.logo img {
+    height: 50px;
+}
+
+.header-info nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 18px;
+}
+
         #fotopersonale {
             display: block;
             margin: 0 auto;
@@ -148,12 +173,20 @@
 </head>
 
 <body>
-    <nav>
-        <a href="#chisono">Chi sono</a>
-        <a href="#imieilavori">I miei lavori</a>
-        <a href="#contatti">Contatti</a>
-        <a href="#dovesono">Dove sono</a>
-    </nav>
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="Logo" height="50">
+        </div>
+        <div class="header-info">
+            <nav>
+                <a href="#chisono">Chi sono</a>
+                <a href="#imieilavori">I miei lavori</a>
+                <a href="#contatti">Contatti</a>
+                <a href="#dovesono">Dove sono</a>
+            </nav>
+        </div>
+    </header>
+    
 
     <div class="container">
         <div id="chisono" class="section">
