@@ -2,6 +2,7 @@
 <html lang="it">
 
 <head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nic Graphic Portfolio</title>
@@ -174,12 +175,66 @@
             cursor: pointer;
             color: white;
         }
-
+/* css mappa */
         iframe {
     border-radius: 10px; /* Bordo arrotondato */
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Ombra leggera */
 }
-        
+ /* css mappa */
+
+
+/* css contatti */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+label {
+    font-weight: bold;
+    color: #333;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+input:focus, textarea:focus {
+    border-color: #ff6b6b;
+    outline: none;
+    box-shadow: 0px 0px 8px rgba(255, 107, 107, 0.5);
+}
+
+button {
+    background: #ff6b6b;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #e63946;
+}
+/* css contatti */
+
     </style>
 </head>
 
@@ -251,22 +306,32 @@
     document.getElementById("modal").style.display = "none";
 });
 
-
     </script>
 
 
-        <div id="contatti" class="section">
-            <h2>Contatti</h2>
-            <form>
-                <label for="nome">Nome:</label>
-                <input type="text" id="nome" name="nome" required><br>
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required><br>
-                <label for="messaggio">Messaggio:</label>
-                <textarea id="messaggio" name="messaggio" required></textarea><br>
-                <button type="submit">Invia</button>
-            </form>
+<div id="contatti" class="section">
+    <h2>Contatti</h2>
+    <p>Compila il modulo per inviarmi un messaggio!</p>
+    <form>
+        <div class="form-group">
+            <label for="nome"><i class="fas fa-user"></i> Nome</label>
+            <input type="text" id="nome" name="nome" required>
         </div>
+
+        <div class="form-group">
+            <label for="email"><i class="fas fa-envelope"></i> Email</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+
+        <div class="form-group">
+            <label for="messaggio"><i class="fas fa-comment"></i> Messaggio</label>
+            <textarea id="messaggio" name="messaggio" required></textarea>
+        </div>
+
+        <button type="submit">Invia</button>
+    </form>
+</div>
+
 
         <div id="dovesono" class="section">
             <h2>Dove sono</h2>
