@@ -91,15 +91,7 @@
             font-size: 18px;
         }
 
-        #footer { /* piè di pagina */
-            text-align: center;
-            padding: 10px;
-            background: rgba(0, 0, 0, 0.8);
-            color: white;
-            margin-top: 20px; /* margine per separarlo dal contenuto della pagina */
-        }
-
-
+       
      /* css i miei lavori */
     .carousel-container { /* contenitore carosello */
             position: relative; /* serve per poter mettere le frecce */
@@ -190,28 +182,28 @@
 
 
 /* css contatti */
-form {
+form { /* modulo di contatti per inserire i dati */
     display: flex;
-    flex-direction: column;
-    gap: 15px;
+    flex-direction: column; /* dispone gli elementi in verticale */
+    gap: 15px; /* spazio uniforme tra gli elementi */
     background: rgba(255, 255, 255, 0.9);
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-.form-group {
+.form-group { /* contenitori dei vari campi dei moduli */
     display: flex;
     flex-direction: column;
     gap: 5px;
 }
 
-label {
+label { /* etichette, testi sopra i vari campi */
     font-weight: bold;
     color: #333;
 }
 
-input, textarea {
+input, textarea { /* campi di testo */
     width: 100%;
     padding: 10px;
     border: 2px solid #ddd;
@@ -219,24 +211,24 @@ input, textarea {
     font-size: 16px;
 }
 
-input:focus, textarea:focus {
-    border-color: #ff6b6b;
+input:focus, textarea:focus { /* effetto quando si clicca su un campo */
+    border-color: #ff6b6b; /* diventa rosso quando si clicca sull'area di testo */
     outline: none;
-    box-shadow: 0px 0px 8px rgba(255, 107, 107, 0.5);
+    box-shadow: 0px 0px 8px rgba(255, 107, 107, 0.5); /* ombra luminosa */
 }
 
-button {
+button { /* pulsante di invio */
     background: #ff6b6b;
     color: white;
     padding: 12px;
     border: none;
     border-radius: 5px;
     font-size: 16px;
-    cursor: pointer;
-    transition: 0.3s;
+    cursor: pointer; /* cambia il tipo di cursore per indicare che è cliccabile */
+    transition: 0.3s; /* rende più fluido il cambiamento di colore */
 }
 
-button:hover {
+button:hover { /* effetto colore più scuro quando si passa sopra il pulsante */
     background: #e63946;
 }
 /* css contatti */
