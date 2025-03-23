@@ -40,30 +40,30 @@
             text-align: center;
         }
 
-        header {
-    width: 100%;
+        header { /* intestazione */
+    width: 100%; /* larghezza */
     background: rgba(0, 0, 0, 0.9);
     color: white;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 10px 20px;
-    position: fixed;
+    display: flex; /* allineare contenuti orizzontalmente */
+    align-items: center; /* allineare contenuti verticalmente */
+    justify-content: space-between; /* spazia gli elementi */
+    padding: 10px 20px; /* aggiunge spazio interno */
+    position: fixed; /* posizione fissa con la header rimane visibile anche quando si scorre */
     top: 0;
     left: 0;
-    z-index: 1000;
+    z-index: 1000; /* garantisce che sia sopra gli altri elementi della pagina */
 }
 
 .logo img {
     height: 50px;
 }
 
-.header-info nav a {
+.header-info nav a {  /* stile per i link di navigazione */
     color: white;
-    text-decoration: none;
+    text-decoration: none;  /* no sottolineatura */
     margin: 0 15px;
     font-size: 18px;
-    transition: opacity 0.3s ease-in-out;
+    transition: opacity 0.3s ease-in-out; /* transizione fluida per l'opacità */
 }
 
 .header-info nav a:hover {
@@ -72,18 +72,18 @@
 
 
         #fotopersonale {
-            display: block;
-            margin: 0 auto;
-            border-radius: 100%;
+            display: block; /* l'immagine non viene trattata come un elemento inline */
+            margin: 0 auto; /* centra l'immagine orizzontalmente */
+            border-radius: 100%; /* immagine circolare */
         }
 
-        nav {
+        nav { /* stile per la barra di navigazione */
             background: rgba(0, 0, 0, 0.8);
             padding: 10px;
             text-align: center;
         }
 
-        nav a {
+        nav a { /* stile per i link nella barra di navigazione */
             color: white;
             text-decoration: none;
             margin: 0 15px;
