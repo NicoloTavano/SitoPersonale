@@ -1,38 +1,38 @@
 <!DOCTYPE html>
 <html lang="it">
 
-<head>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head> /* informazioni importanti per il browser e gli stili del sito */
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"> /* libreria di icone */
+    <meta charset="UTF-8">  /* evita problemi con lettere accentate e caratteri speciali */
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  /* rende il sito responsive, adattandolo ai dispositivi mobili */
     <title>Nic Graphic Portfolio</title>
     <link href="https://fonts.cdnfonts.com/css/lemon-milk" rel="stylesheet">
     <link href="styles.css" rel="stylesheet">
-    <style>
-        body {
+    <style> /* css interno da poi spostare in quello esterno */
+        body { 
             background-image: url(jpg/sfondo.jpg);
             background-size: cover;
-            background-attachment: fixed;
+            background-attachment: fixed; /* mantiene lo sfondo bloccato */
             color: rgb(0, 0, 0);
             font-family: 'Bahnschrift';
             margin: 0;
             padding: 0;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
+            display: flex; /* allinea il contenuto al centro */
+            flex-direction: column; /* allinea il contenuto al centro */
+            align-items: center; /* allinea il contenuto al centro */
         }
 
-        .container {
+        .container {   /* larghezza della pagina */
             width: 80%;
             max-width: 1000px;
         }
 
-        .section {
+        .section {   /* contenitore */
             background: rgba(255, 255, 255, 0.8);
-            border-radius: 10px;
-            padding: 20px;
+            border-radius: 10px; /* bordi arrotondati */
+            padding: 20px;  /* spaziatura interna */
             margin: 20px 0;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* ombra leggera del contenitore */
         }
 
         h2 {
