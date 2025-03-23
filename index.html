@@ -245,28 +245,34 @@ button:hover {
 
 /* css footer */
 #footer {
-    width: 100%; /* Occupa tutta la larghezza della pagina */
+    width: 100%;
     background: rgba(0, 0, 0, 0.9);
     color: white;
     padding: 30px 10px;
     text-align: center;
     margin-top: 20px;
+    display: flex;
+    flex-direction: column; /* Organizza gli elementi in colonna */
+    align-items: center; /* Centra il contenuto */
 }
 
 .footer-container {
     display: flex;
-    justify-content: space-between; /* Spazia uniformemente le colonne */
+    justify-content: center; /* Centra le colonne orizzontalmente */
+    align-items: flex-start; /* Allinea in alto */
     flex-wrap: wrap; /* Permette di adattarsi ai dispositivi più piccoli */
-    max-width: 1200px; /* Limita la larghezza su schermi molto grandi */
-    margin: 0 auto; /* Centra il contenuto */
+    max-width: 1200px;
+    width: 100%;
     padding: 0 20px;
+    gap: 30px; /* Distanza tra le colonne */
 }
 
 .footer-column {
-    flex: 1; /* Adatta la dimensione delle colonne in base allo spazio disponibile */
-    min-width: 250px; /* Evita che le colonne diventino troppo strette */
-    text-align: left;
+    flex: 1; /* Le colonne si adattano automaticamente */
+    min-width: 250px;
+    text-align: center; /* Centra il testo nelle colonne */
 }
+
 
 .footer-column h3 {
     font-size: 18px;
