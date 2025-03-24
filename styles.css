@@ -152,7 +152,7 @@ nav a { /* stile per i link nella barra di navigazione */
     overflow: hidden; /* serve a mostrare solo gli elementi visibili dentro la finestra */
     scroll-behavior: smooth; /* scorrimento con la freccia morbido */
     white-space: nowrap; /* nessun ritorno a capo, così gli elementi rimangono sulla stessa linea */
-    width: 100%; /* larghezza */
+    width: 70%; /* larghezza */
 }
 
 .carousel div { /* stile degli elementi dentro il carosello */
