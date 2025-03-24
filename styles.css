@@ -31,8 +31,8 @@ body {
 }
 
 .container {   /* larghezza della pagina */
-    width: 70%;
-    max-width: 1000px;
+    width: 80%;
+    max-width: 800px;
 }
 
 .section {   /* contenitore */
