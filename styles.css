@@ -145,6 +145,9 @@ nav a { /* stile per i link nella barra di navigazione */
     position: relative; /* serve per poter mettere le frecce */
     display: flex; /* allineare gli elementi orizontalmente */
     align-items: center; /* elementi dentro il carosello centrati verticalmente */
+    width: 100%;
+    max-width: 1000px; /* Limita la larghezza */
+    overflow: hidden; /* Evita che elementi fuori dal carosello escano */
 }
 
 .carousel {
@@ -153,6 +156,8 @@ nav a { /* stile per i link nella barra di navigazione */
     scroll-behavior: smooth; /* scorrimento con la freccia morbido */
     white-space: nowrap; /* nessun ritorno a capo, così gli elementi rimangono sulla stessa linea */
     width: 70%; /* larghezza */
+    max-width: 1000px; /* Evita espansioni indesiderate */
+    flex-wrap: nowrap; /* Impedisce agli elementi di andare a capo */
 }
 
 .carousel div { /* stile degli elementi dentro il carosello */
