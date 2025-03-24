@@ -90,6 +90,7 @@ opacity: 0.5; /* Riduce l'opacità al 50% quando ci passi sopra */
     display: block; /* l'immagine non viene trattata come un elemento inline */
     margin: 0 auto; /* centra l'immagine orizzontalmente */
     border-radius: 100%; /* immagine circolare */
+    
 }
 
 nav { /* stile per la barra di navigazione */
