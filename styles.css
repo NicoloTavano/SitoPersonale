@@ -32,7 +32,7 @@ body {
 
 .container {   /* larghezza della pagina */
     width: 80%;
-    max-width: 800px;
+    max-width: 600px;
 }
 
 .section {   /* contenitore */
@@ -41,6 +41,12 @@ body {
     padding: 20px;  /* spaziatura interna */
     margin: 20px 0;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* ombra leggera del contenitore */
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 90%; /* Occupa più spazio su schermi piccoli */
+    }
 }
 
 .section:first-of-type {
