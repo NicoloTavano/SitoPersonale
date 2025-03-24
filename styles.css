@@ -31,8 +31,8 @@ body {
 }
 
 .container {   /* larghezza della pagina */
-    width: 80%;
-    max-width: 600px;
+    width: 70%; !important
+    max-width: 1000px;
 }
 
 .section {   /* contenitore */
@@ -152,7 +152,7 @@ nav a { /* stile per i link nella barra di navigazione */
     overflow: hidden; /* serve a mostrare solo gli elementi visibili dentro la finestra */
     scroll-behavior: smooth; /* scorrimento con la freccia morbido */
     white-space: nowrap; /* nessun ritorno a capo, così gli elementi rimangono sulla stessa linea */
-   
+    width: 100%; /* larghezza */
 }
 
 .carousel div { /* stile degli elementi dentro il carosello */
