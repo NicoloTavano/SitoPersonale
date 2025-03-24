@@ -108,6 +108,7 @@ opacity: 0.5; /* Riduce l'opacità al 50% quando ci passi sopra */
 }
 
 #chisono h2 {
+    flex: 1;
     text-align: center
 }
 /* css chi sono */
