@@ -92,6 +92,12 @@ opacity: 0.5; /* Riduce l'opacità al 50% quando ci passi sopra */
     gap: 20px; /* Spazio tra immagine e testo */
 }
 
+.chisono-content {
+    display: flex; /* Allinea immagine e testo in orizzontale */
+    align-items: center; /* Centra il testo verticalmente rispetto all'immagine */
+    gap: 20px; /* Spazio tra immagine e testo */
+}
+
 #fotopersonale {
     display: block; /* l'immagine non viene trattata come un elemento inline */
     margin: 0 auto; /* centra l'immagine orizzontalmente */
@@ -102,14 +108,17 @@ opacity: 0.5; /* Riduce l'opacità al 50% quando ci passi sopra */
     flex-shrink: 0; /* Evita che l'immagine si ridimensioni */
 }
 
-#chisono p {
+.chisono-content p {
     flex: 1; /* Il testo occupa tutto lo spazio disponibile */
-    text-align: justify; /* allinea il testo in modo uniforme */
+    text-align: justify;
 }
 
-#chisono h2 {
-    flex: 1;
-    text-align: center
+/* Per schermi piccoli (mobile), impila immagine e testo in verticale */
+@media (max-width: 768px) {
+    .chisono-content {
+        flex-direction: column;
+        text-align: center;
+    }
 }
 /* css chi sono */
 
