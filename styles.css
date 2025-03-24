@@ -241,7 +241,7 @@ text-align: center;
 
 input, textarea { /* campi di testo */
 width: 100%;
-padding: 10px;
+padding: 10px 0;
 border: 2px solid rgba(170, 78, 177, 0.7);
 border-radius: 5px;
 font-size: 16px;
