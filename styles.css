@@ -94,7 +94,7 @@ opacity: 0.5; /* Riduce l'opacità al 50% quando ci passi sopra */
 .chisono-content {
     display: flex; /* Allinea immagine e testo in orizzontale */
     align-items: center; /* Centra il testo verticalmente rispetto all'immagine */
-    gap: 20px; /* Spazio tra immagine e testo */
+    gap: 5px; /* Spazio tra immagine e testo */
 }
 
 #fotopersonale {
