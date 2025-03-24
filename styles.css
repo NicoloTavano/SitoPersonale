@@ -87,7 +87,6 @@ opacity: 0.5; /* Riduce l'opacità al 50% quando ci passi sopra */
 
 /* css chi sono */
 #chisono {
-    display: flex; /* Abilita il layout flessibile */
     align-items: center; /* Centra verticalmente il testo rispetto all'immagine */
     gap: 20px; /* Spazio tra immagine e testo */
 }
@@ -109,7 +108,6 @@ opacity: 0.5; /* Riduce l'opacità al 50% quando ci passi sopra */
 }
 
 .chisono-content p {
-    flex: 1; /* Il testo occupa tutto lo spazio disponibile */
     text-align: justify;
 }
 
