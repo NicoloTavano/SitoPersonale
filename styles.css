@@ -104,7 +104,11 @@ opacity: 0.5; /* Riduce l'opacità al 50% quando ci passi sopra */
 
 #chisono p {
     flex: 1; /* Il testo occupa tutto lo spazio disponibile */
-    text-align: justify; /* Opzionale: allinea il testo in modo uniforme */
+    text-align: justify; /* allinea il testo in modo uniforme */
+}
+
+#chisono h2 {
+    text-align: center
 }
 /* css chi sono */
 
