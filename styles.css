@@ -85,6 +85,12 @@ transition: opacity 0.3s ease-in-out; /* transizione fluida per l'opacità */
 opacity: 0.5; /* Riduce l'opacità al 50% quando ci passi sopra */
 }
 
+/* css chi sono */
+#chisono {
+    display: flex; /* Abilita il layout flessibile */
+    align-items: center; /* Centra verticalmente il testo rispetto all'immagine */
+    gap: 20px; /* Spazio tra immagine e testo */
+}
 
 #fotopersonale {
     display: block; /* l'immagine non viene trattata come un elemento inline */
@@ -93,7 +99,14 @@ opacity: 0.5; /* Riduce l'opacità al 50% quando ci passi sopra */
     width: 150px; /* Larghezza fissa */
     height: 150px; /* Altezza fissa */
     object-fit: cover; /* Ritaglia l'immagine senza distorcerla */
+    flex-shrink: 0; /* Evita che l'immagine si ridimensioni */
 }
+
+#chisono p {
+    flex: 1; /* Il testo occupa tutto lo spazio disponibile */
+    text-align: justify; /* Opzionale: allinea il testo in modo uniforme */
+}
+/* css chi sono */
 
 nav { /* stile per la barra di navigazione */
     background: rgba(0, 0, 0, 0.0);
