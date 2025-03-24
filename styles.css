@@ -155,7 +155,7 @@ nav a { /* stile per i link nella barra di navigazione */
     overflow: hidden; /* serve a mostrare solo gli elementi visibili dentro la finestra */
     scroll-behavior: smooth; /* scorrimento con la freccia morbido */
     white-space: nowrap; /* nessun ritorno a capo, così gli elementi rimangono sulla stessa linea */
-    width: 70%; /* larghezza */
+    width: 100%; /* larghezza */
     max-width: 1000px; /* Evita espansioni indesiderate */
     flex-wrap: nowrap; /* Impedisce agli elementi di andare a capo */
 }
