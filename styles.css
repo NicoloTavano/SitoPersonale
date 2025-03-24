@@ -88,7 +88,7 @@ opacity: 0.5; /* Riduce l'opacità al 50% quando ci passi sopra */
 /* css chi sono */
 #chisono {
     align-items: center; /* Centra verticalmente il testo rispetto all'immagine */
-    gap: 20px; /* Spazio tra immagine e testo */
+    gap: 5px; /* Spazio tra immagine e testo */
 }
 
 .chisono-content {
