@@ -43,6 +43,11 @@ body {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* ombra leggera del contenitore */
 }
 
+.section:first-of-type {
+    margin-top: 100px; /* Aggiunge più spazio sopra solo alla prima */
+}
+
+
 h2 {
     font-family: 'LEMON MILK', sans-serif;
     text-align: center;
