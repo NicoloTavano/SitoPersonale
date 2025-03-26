@@ -18,7 +18,7 @@ h2 {
 }
 
 body { 
-    background-image: url('jpg/sfondo\ superiore.jpg'), url('jpg/sfondo\ inferiore.jpg');
+    background-image: url('jpg/sfondo\ superiore.jpg'), url('jpg/sfondo\ inferiore2.jpg.jpg');
     background-size: 100% auto, 100% auto; /* Adatta la larghezza al 100% */
     background-position: top center, bottom center; /* Una immagine sopra, l'altra sotto */
     background-repeat: no-repeat, no-repeat; /* Non ripetere le immagini */
