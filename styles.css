@@ -32,7 +32,7 @@ body {
 }
 
 .side-image {
-    position: fixed; /* Fissa le immagini ai lati */
+    position: absolute
     top: 50%; /* Centra verticalmente */
     transform: translateY(-50%); /* Aggiusta la posizione */
     width: 100px; /* Dimensione regolabile */
