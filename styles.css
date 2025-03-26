@@ -56,7 +56,7 @@ body {
 
 /* css contenitori */
 .container {   /* larghezza della pagina */
-    width: 70%; !important
+    width: 70%; 
     max-width: 1000px;
 }
 
