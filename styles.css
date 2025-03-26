@@ -31,26 +31,7 @@ body {
     align-items: center; /* allinea il contenuto al centro */
 }
 
-.image-container {
-    position: relative;
-    width: 100%; /* Occupa tutta la larghezza */
-}
 
-.side-image {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 100px;
-}
-
-.left-image {
-    left: 80px;
-}
-
-.right-image {
-    right: 80px;
-}
-/* css informazioni base e immagini */
 
 
 /* css contenitori */
