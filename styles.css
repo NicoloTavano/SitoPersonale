@@ -454,10 +454,7 @@ box-shadow: 0px -4px 10px rgba(0, 0, 0, 0.2);
     }
 }
 
-function toggleMenu() {
-    const nav = document.querySelector('.header-info nav');
-    nav.classList.toggle('active');
-}
+/* Removed JavaScript code mistakenly placed in CSS */
 
 @media (max-width: 768px) {
     .carousel div {
