@@ -59,6 +59,23 @@ body {
 .section:first-of-type {
     margin-top: 100px; /* Aggiunge più spazio sopra solo alla prima */
 }
+
+
+
+
+
+.section {
+    background-image: url(jpg/pattern.jpg); /* immagine di sfondo */
+    background-size: cover;         /* l'immagine copre tutto il contenitore */
+    background-position: center;    /* centrata */
+    background-repeat: no-repeat;   /* non ripete l’immagine */
+    border-radius: 10px;
+    padding: 20px;
+    color: white;                   /* per contrasto visivo */
+
+
+
+
 /* css contenitori */
 
 h2 {
