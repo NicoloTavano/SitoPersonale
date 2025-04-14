@@ -286,7 +286,7 @@ box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 
 
 
-.section {
+.form .container {
     background-image: url(jpg/pattern.jpg);
     background-size: cover;         /* l'immagine copre tutto il contenitore */
     background-position: center;    /* centrata */
