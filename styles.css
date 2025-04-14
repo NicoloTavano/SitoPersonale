@@ -52,7 +52,7 @@ body {
 
 
 .section {
-    background-image: url('immagini/tuo-sfondo.jpg');
+    background-image: url(jpg/pattern.jpg);
     background-size: cover;         /* l'immagine copre tutto il contenitore */
     background-position: center;    /* centrata */
     background-repeat: no-repeat;   /* non ripete l’immagine */
