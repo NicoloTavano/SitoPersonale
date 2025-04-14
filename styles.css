@@ -50,6 +50,19 @@ body {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* ombra leggera del contenitore */
 }
 
+
+.section {
+    background-image: url('immagini/tuo-sfondo.jpg');
+    background-size: cover;         /* l'immagine copre tutto il contenitore */
+    background-position: center;    /* centrata */
+    background-repeat: no-repeat;   /* non ripete l’immagine */
+    border-radius: 10px;
+    padding: 20px;
+    color: rgb(0, 0, 0);                   /* per contrasto visivo */
+  }
+
+
+
 @media (max-width: 768px) {
     .container {
         width: 90%; /* Occupa più spazio su schermi piccoli */
