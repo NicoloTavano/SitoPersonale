@@ -284,6 +284,18 @@ border-radius: 10px;
 box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
+
+
+.section {
+    background-image: url(jpg/pattern.jpg);
+    background-size: cover;         /* l'immagine copre tutto il contenitore */
+    background-position: center;    /* centrata */
+    background-repeat: no-repeat;   /* non ripete l’immagine */
+    border-radius: 10px;
+    padding: 20px;
+  }
+
+
 .form-group { /* contenitori dei vari campi dei moduli */
 display: flex;
 flex-direction: column;
