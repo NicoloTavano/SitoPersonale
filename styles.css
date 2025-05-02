@@ -451,5 +451,5 @@ box-shadow: 0px -4px 10px rgba(0, 0, 0, 0.2);
     width: auto;
     object-fit: contain;
     object-position: bottom right;
-    padding-right: 40px;
-  }
+    transform: translateX(20px); /* Sposta l'immagine verso destra */  
+}
