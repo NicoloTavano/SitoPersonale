@@ -438,7 +438,7 @@ box-shadow: 0px -4px 10px rgba(0, 0, 0, 0.2);
   }
 
   .hero-image {
-    flex: 1;
+    flex: 1.5;
     position: relative;
     display: flex;
     justify-content: flex-end;
@@ -451,5 +451,4 @@ box-shadow: 0px -4px 10px rgba(0, 0, 0, 0.2);
     width: auto;
     object-fit: contain;
     object-position: bottom right;
-    transform: translateX(20px); /* Sposta l'immagine verso destra */  
 }
