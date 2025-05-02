@@ -439,9 +439,9 @@ box-shadow: 0px -4px 10px rgba(0, 0, 0, 0.2);
 
   .hero-image {
     flex: 1;
+    min-height: 200vh;
     background-image: url('jpg/io.png'); /* Sostituisci con la tua immagine */
-    background-size: cover; 
+    background-size: contain; 
     background-repeat: no-repeat;
     background-position: bottom right;
-    min-height: 100vh;
   }
