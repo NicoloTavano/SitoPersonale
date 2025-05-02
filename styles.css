@@ -23,10 +23,6 @@ h2 {
 }
 /* css informazioni base e immagini */
 body { 
-    background-image: url('jpg/sfondo\ superiore.jpg'), url('jpg/sfondo\ inferiore2.jpg');
-    background-size: 100% auto, 100% auto; /* Adatta la larghezza al 100% */
-    background-position: top center, bottom center; /* Una immagine sopra, l'altra sotto */
-    background-repeat: no-repeat, no-repeat; /* Non ripetere le immagini */
     color: rgb(0, 0, 0);
     font-family: 'Bahnschrift';
     margin: 0;
@@ -35,6 +31,15 @@ body {
     flex-direction: column; /* allinea il contenuto al centro */
     align-items: center; /* allinea il contenuto al centro */
 }
+
+.main-wrapper {
+    background-image: url('jpg/sfondo superiore.jpg'), url('jpg/sfondo inferiore2.jpg');
+    background-size: 100% auto, 100% auto;
+    background-position: top center, bottom center;
+    background-repeat: no-repeat, no-repeat;
+    width: 100%;
+
+
 
 /* css contenitori */
 .container {   /* larghezza della pagina */
@@ -52,9 +57,6 @@ body {
 
 
 
-
-
-
 @media (max-width: 768px) {
     .container {
         width: 90%; /* Occupa più spazio su schermi piccoli */
@@ -64,11 +66,6 @@ body {
 .section:first-of-type {
     margin-top: 100px; /* Aggiunge più spazio sopra solo alla prima */
 }
-
-
-
-
-
 
 /* css contenitori */
 
