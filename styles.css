@@ -88,8 +88,7 @@ opacity: 0.5; /* Riduce l'opacità al 50% quando ci passi sopra */
     background-size: cover;
     background-position: top center;
     background-repeat: no-repeat;
-    padding-top: 80px;
-     margin-top: 100px;
+     margin-top: 80px;
 }
 
   .hero-content {
