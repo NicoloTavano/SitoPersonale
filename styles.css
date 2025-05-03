@@ -120,7 +120,9 @@ opacity: 0.5; /* Riduce l'opacità al 50% quando ci passi sopra */
 }
 /* css hero */
 
+
 .shape-divider {
+    margin-top: 100vh;
     position: relative;
     width: 100%;
     overflow: hidden;
