@@ -121,7 +121,6 @@ opacity: 0.5; /* Riduce l'opacità al 50% quando ci passi sopra */
 
 .sezione-normale { 
     width: 100%; /* larghezza */
-    width: 100%; /* larghezza */
     align-items: center; /* allineare contenuti verticalmente */
     justify-content: space-between; /* spazia gli elementi */
 }
@@ -132,6 +131,7 @@ width: 100%; /* larghezza */
 
 .sezione-normale__contenuto {
     background: rgb(30, 1, 51); 
+    width: 100%; /* larghezza */
 }
 
 
