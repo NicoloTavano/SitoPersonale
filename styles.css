@@ -188,15 +188,20 @@ opacity: 0.5; /* Riduce l'opacità al 50% quando ci passi sopra */
 
 
 /* css chi sono */
+/* css chi sono */
 #chisono {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 20px; /* Spazio intorno alla sezione */
+    justify-content: center; /* opzionale, se vuoi centrare anche verticalmente */
+    max-width: 800px;        /* limita la larghezza per un layout più leggibile */
+    margin: 0 auto;          /* centra orizzontalmente il contenitore */
+    padding: 20px;
     text-align: justify;
     font-size: 16px;
-    line-height: 1.5; /* Migliora la leggibilità */
+    line-height: 1.5;
 }
+
 
 /* Adattamento per schermi piccoli (mobile) */
 @media (max-width: 768px) {
