@@ -23,6 +23,10 @@ h2 {
 }
 /* css informazioni base e immagini */
 body { 
+    background-image: url('jpg/sfondo\ superiore.jpg'), url('jpg/sfondo\ inferiore2.jpg');
+    background-size: 100% auto, 100% auto; /* Adatta la larghezza al 100% */
+    background-position: top center, bottom center; /* Una immagine sopra, l'altra sotto */
+    background-repeat: no-repeat, no-repeat; /* Non ripetere le immagini */
     color: rgb(0, 0, 0);
     font-family: 'Bahnschrift';
     margin: 0;
@@ -105,25 +109,6 @@ transition: opacity 0.3s ease-in-out; /* transizione fluida per l'opacità */
 opacity: 0.5; /* Riduce l'opacità al 50% quando ci passi sopra */
 }
 /* css intestazione */
-
-
-
-
-
-.main-wrapper {
-    padding-top: 70px; /* spazio lasciato per la header fissa */
-    background-image: url('jpg/sfondo\ superiore.jpg');
-    background-size: 100% auto;
-    background-position: top center;
-    background-repeat: no-repeat;
-  }
-
-
-
-
-
-
-
 
 
 /* css chi sono */
