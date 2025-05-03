@@ -159,6 +159,8 @@ opacity: 0.5; /* Riduce l'opacità al 50% quando ci passi sopra */
 .container {   /* larghezza della pagina */
     width: 70%; 
     max-width: 1000px;
+    margin: 0 auto; /* centra il contenitore */
+    padding: 20px; /* spaziatura interna */
 }
 
 .section {   /* contenitore */
@@ -187,7 +189,6 @@ opacity: 0.5; /* Riduce l'opacità al 50% quando ci passi sopra */
 
 
 
-/* css chi sono */
 /* css chi sono */
 #chisono {
     display: flex;
