@@ -23,9 +23,7 @@ h2 {
 }
 /* css informazioni base e immagini */
 body {
-   
-    
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     font-family: 'Bahnschrift';
     margin: 0;
     padding: 0;
@@ -103,11 +101,13 @@ opacity: 0.5; /* Riduce l'opacità al 50% quando ci passi sopra */
   .hero-content h2 {
     font-size: 3rem; 
     margin-bottom: 20px;
+    color: rgb(0, 0, 0);
   }
 
   .hero-content p {
     font-size: 1.2rem;
     max-width: 500px;
+    color: rgb(0, 0, 0);
   }
 
   .hero-image {
