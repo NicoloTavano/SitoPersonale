@@ -121,9 +121,9 @@ opacity: 0.5; /* Riduce l'opacità al 50% quando ci passi sopra */
 
 
 
-.sezione-normale__shape  
+.sezione-normale__shape  {
 width: 100%; /* larghezza */
-    
+}  
 .sezione-normale__contenuto {
     background: rgb(30, 1, 51);
     width: 100%; /* larghezza */
