@@ -162,7 +162,7 @@ opacity: 0.5; /* Riduce l'opacità al 50% quando ci passi sopra */
 }
 
 .section {   /* contenitore */
-    background: rgb(30, 1, 51);
+    background: rgb(75, 12, 120);
     border-radius: 10px; /* bordi arrotondati */
     padding: 20px;  /* spaziatura interna */
     margin: 20px 0;
