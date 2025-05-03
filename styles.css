@@ -36,41 +36,7 @@ body {
     align-items: center; /* allinea il contenuto al centro */
 }
 
-/* css contenitori */
-.container {   /* larghezza della pagina */
-    width: 70%; 
-    max-width: 1000px;
-}
 
-.section {   /* contenitore */
-    background: rgba(255, 255, 255, 0.8);
-    border-radius: 10px; /* bordi arrotondati */
-    padding: 20px;  /* spaziatura interna */
-    margin: 20px 0;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* ombra leggera del contenitore */
-}
-
-
-
-
-
-
-@media (max-width: 768px) {
-    .container {
-        width: 90%; /* Occupa più spazio su schermi piccoli */
-    }
-}
-
-.section:first-of-type {
-    margin-top: 100px; /* Aggiunge più spazio sopra solo alla prima */
-}
-
-
-
-
-
-
-/* css contenitori */
 
 h2 {
     font-family: 'LEMON MILK', sans-serif;
@@ -159,6 +125,39 @@ opacity: 0.5; /* Riduce l'opacità al 50% quando ci passi sopra */
 .section{
     background: rgb(30, 1, 51);
     padding: 25%;
+
+
+
+
+
+
+
+/* css contenitori */
+.container {   /* larghezza della pagina */
+    width: 70%; 
+    max-width: 1000px;
+}
+
+.section {   /* contenitore */
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 10px; /* bordi arrotondati */
+    padding: 20px;  /* spaziatura interna */
+    margin: 20px 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* ombra leggera del contenitore */
+}
+
+
+@media (max-width: 768px) {
+    .container {
+        width: 90%; /* Occupa più spazio su schermi piccoli */
+    }
+}
+
+.section:first-of-type {
+    margin-top: 100px; /* Aggiunge più spazio sopra solo alla prima */
+}
+
+/* css contenitori */
 
 
 
