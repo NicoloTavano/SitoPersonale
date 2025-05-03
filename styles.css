@@ -22,19 +22,22 @@ h2 {
     font-style: normal;
 }
 /* css informazioni base e immagini */
-body { 
-    background-image: url('jpg/sfondo\ superiore.jpg');
-    background-size: 100% auto, 100% auto; /* Adatta la larghezza al 100% */
-    background-position: top center, bottom center; /* Una immagine sopra, l'altra sotto */
-    background-repeat: no-repeat, no-repeat; /* Non ripetere le immagini */
+body {
+    background-image: url('jpg/sfondo superiore.jpg'); /* evita il backslash */
+    background-size: 100% auto; /* adatta la larghezza */
+    background-position: top center; /* posiziona in alto */
+    background-repeat: no-repeat; /* non ripetere */
+    
     color: rgb(0, 0, 0);
     font-family: 'Bahnschrift';
     margin: 0;
     padding: 0;
-    display: flex; /* allinea il contenuto al centro */
-    flex-direction: column; /* allinea il contenuto al centro */
-    align-items: center; /* allinea il contenuto al centro */
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
+
 
 
 
