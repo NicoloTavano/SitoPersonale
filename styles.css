@@ -119,22 +119,27 @@ opacity: 0.5; /* Riduce l'opacità al 50% quando ci passi sopra */
 /* css hero */
 
 
-.sezione-normale { 
-    width: 100%; /* larghezza */
-    align-items: center; /* allineare contenuti verticalmente */
-    justify-content: space-between; /* spazia gli elementi */
-}
-
-.sezione-normale__shape  {
-    margin-bottom: -4px;
-width: 100%; /* larghezza */
-}  
-
-.sezione-normale__contenuto {
-    background: rgb(30, 1, 51); 
-    width: 100%; /* larghezza */
-}
-
+.shape-divider {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    margin-top: -1px; /* toglie eventuale bordo visivo */
+  }
+  
+  .shape-divider svg {
+    display: block;
+    width: 100%;
+    height: auto;
+    transform: rotate(0deg); /* o 180deg per ribaltarlo */
+  }
+  
+  .main-section {
+    background-color: #6a0dad; /* esempio di viola */
+    padding: 50px 20px;
+    position: relative;
+    z-index: 1;
+  }
 
 
 
