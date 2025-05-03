@@ -124,6 +124,7 @@ opacity: 0.5; /* Riduce l'opacità al 50% quando ci passi sopra */
 
 .sezione-colorata {
     background: rgb(30, 1, 51);
+    padding: 25%;
     width: 100%; /* larghezza */
     align-items: center; /* allineare contenuti verticalmente */
     justify-content: space-between; /* spazia gli elementi */
