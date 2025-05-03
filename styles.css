@@ -139,7 +139,9 @@ z-index: 1;
     width: 100%;
     height: auto;
     transform: rotate(0deg); /* o 180deg per ribaltarlo */
-  }
+margin-bottom: -4px; /* per evitare spazi bianchi */
+     
+}
   
   .main-section {
     background: rgb(30, 1, 51); 
