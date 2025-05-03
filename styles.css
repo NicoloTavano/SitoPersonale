@@ -76,7 +76,7 @@ opacity: 0.5; /* Riduce l'opacità al 50% quando ci passi sopra */
 
 /* css hero */
 .hero {
-    height: 100vh;
+    height: 80vh;
     display: flex;
     position: fixed;
     z-index: 10;
