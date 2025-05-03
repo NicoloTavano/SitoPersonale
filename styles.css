@@ -148,6 +148,7 @@ margin-bottom: -4px; /* per evitare spazi bianchi */
     padding: 50px 20px;
     position: relative;
     z-index: 1;
+    margin-bottom: +4px; 
   }
 
 
