@@ -122,9 +122,10 @@ opacity: 0.5; /* Riduce l'opacità al 50% quando ci passi sopra */
 
 
 
-.section{
+.sezione-colorata {
     background: rgb(30, 1, 51);
-    width: 100%; /* larghezza */
+    padding: 25%;
+    
 
 
 
