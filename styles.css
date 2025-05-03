@@ -112,7 +112,7 @@ opacity: 0.5; /* Riduce l'opacità al 50% quando ci passi sopra */
 
 .main-wrapper {
     padding-top: 70px; /* spazio lasciato per la header fissa */
-    background-image: url('jpg/sfondo superiore.jpg');
+    background-image: url('jpg/sfondo\ superiore.jpg');
     background-size: 100% auto;
     background-position: top center;
     background-repeat: no-repeat;
