@@ -23,7 +23,7 @@ h2 {
 }
 /* css informazioni base e immagini */
 body { 
-    background-image: url('jpg/sfondo\ superiore.jpg'), url('jpg/sfondo\ inferiore2.jpg');
+    background-image: url('jpg/sfondo\ superiore.jpg');
     background-size: 100% auto, 100% auto; /* Adatta la larghezza al 100% */
     background-position: top center, bottom center; /* Una immagine sopra, l'altra sotto */
     background-repeat: no-repeat, no-repeat; /* Non ripetere le immagini */
@@ -118,7 +118,6 @@ opacity: 0.5; /* Riduce l'opacità al 50% quando ci passi sopra */
 }
 /* css hero */
 
-
 .shape-divider {
     position: relative;
     width: 100%;
@@ -135,11 +134,12 @@ opacity: 0.5; /* Riduce l'opacità al 50% quando ci passi sopra */
   }
   
   .main-section {
-    background-color: #6a0dad; /* esempio di viola */
+    background: rgb(30, 1, 51); 
     padding: 50px 20px;
     position: relative;
     z-index: 1;
   }
+
 
 
 
