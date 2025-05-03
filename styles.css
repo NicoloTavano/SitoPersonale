@@ -81,6 +81,7 @@ opacity: 0.5; /* Riduce l'opacità al 50% quando ci passi sopra */
 .hero {
     height: 100vh;
     display: flex;
+    position: fixed;
   }
 
   .hero-content {
