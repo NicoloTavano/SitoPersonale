@@ -83,12 +83,12 @@ opacity: 0.5; /* Riduce l'opacità al 50% quando ci passi sopra */
     top: 0; left: 0;
     width: 100%;
     z-index: -1;
-
+    padding-top: 200px; /* spazio per evitare che il contenuto venga coperto dalla header */ 
     background-image: url('jpg/sfondo superiore.jpg'); /* evita il backslash */
     background-size: 100% auto; /* adatta la larghezza */
     background-position: top center; /* posiziona in alto */
     background-repeat: no-repeat; /* non ripetere */
-    padding-top: 200px; /* spazio per evitare che il contenuto venga coperto dalla header */ 
+    
 }
 
   .hero-content {
