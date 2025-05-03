@@ -88,7 +88,8 @@ opacity: 0.5; /* Riduce l'opacità al 50% quando ci passi sopra */
     background-size: 100% auto; /* adatta la larghezza */
     background-position: top center; /* posiziona in alto */
     background-repeat: no-repeat; /* non ripetere */
-  }
+    padding-top: 80px; /* spazio per evitare che il contenuto venga coperto dalla header */ 
+}
 
   .hero-content {
     flex: 1;
