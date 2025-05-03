@@ -384,7 +384,7 @@ background: rgba(106, 28, 111, 0.7);
 /* css footer */
 #footer { /* piè di pagina */
 width: 100%;
-background: rgba(0, 0, 0, 0.9);
+background: rgb(0, 0, 0);
 color: white;
 padding: 30px 0px;
 text-align: center;
