@@ -215,6 +215,51 @@ opacity: 0.5; /* Riduce l'opacità al 50% quando ci passi sopra */
 }
 /* css chi sono */
 
+
+
+
+
+
+.skill-bar {
+    margin: 10px 0;
+  }
+  
+  .skill-bar span {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .bar {
+    background-color: #e0e0e0;
+    border-radius: 20px;
+    overflow: hidden;
+    height: 20px;
+  }
+  
+  .fill {
+    height: 100%;
+    background: linear-gradient(90deg, rgba(170,78,177,1) 0%, rgba(113,53,172,1) 100%);
+    width: 0;
+    transition: width 1.5s ease-in-out;
+    border-radius: 20px 0 0 20px;
+  }
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* css barra di navigazione */
 nav { /* stile per la barra di navigazione */
     background: rgba(0, 0, 0, 0.0);
     padding: 20px;
@@ -227,7 +272,7 @@ nav a { /* stile per i link nella barra di navigazione */
     margin: 0 15px;
     font-size: 18px;
 }
-
+/* css barra di navigazione */
 
 /* css i miei lavori */
 .carousel-container { /* contenitore carosello */
