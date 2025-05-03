@@ -43,7 +43,7 @@ h2 {
 /* css intestazione */
 header { /* intestazione */
 width: 100%; /* larghezza */
-background: rgba(0, 0, 0, 0.9);
+background: rgba(0, 0, 0, 0.0);
 color: white;
 display: flex; /* allineare contenuti orizzontalmente */
 align-items: center; /* allineare contenuti verticalmente */
