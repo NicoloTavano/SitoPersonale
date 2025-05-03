@@ -23,10 +23,7 @@ h2 {
 }
 /* css informazioni base e immagini */
 body {
-    background-image: url('jpg/sfondo superiore.jpg'); /* evita il backslash */
-    background-size: 100% auto; /* adatta la larghezza */
-    background-position: top center; /* posiziona in alto */
-    background-repeat: no-repeat; /* non ripetere */
+   
     
     color: rgb(0, 0, 0);
     font-family: 'Bahnschrift';
@@ -86,6 +83,11 @@ opacity: 0.5; /* Riduce l'opacità al 50% quando ci passi sopra */
     top: 0; left: 0;
     width: 100%;
     z-index: -1;
+
+    background-image: url('jpg/sfondo superiore.jpg'); /* evita il backslash */
+    background-size: 100% auto; /* adatta la larghezza */
+    background-position: top center; /* posiziona in alto */
+    background-repeat: no-repeat; /* non ripetere */
   }
 
   .hero-content {
