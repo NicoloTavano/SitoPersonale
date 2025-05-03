@@ -126,6 +126,7 @@ opacity: 0.5; /* Riduce l'opacità al 50% quando ci passi sopra */
 }
 
 .sezione-normale__shape  {
+    margin-bottom: -4px;
 width: 100%; /* larghezza */
 }  
 
