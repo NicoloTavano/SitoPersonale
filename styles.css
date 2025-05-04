@@ -221,7 +221,7 @@ opacity: 0.5; /* Riduce l'opacità al 50% quando ci passi sopra */
 
 /* css competenze */
   
-  .skill-bar {
+.skill-bar {
     margin: 12px 0;
   }
   
@@ -231,32 +231,33 @@ opacity: 0.5; /* Riduce l'opacità al 50% quando ci passi sopra */
     margin-bottom: 6px;
   }
   
+  .bar-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
   .bar {
+    flex: 1;
     background-color: #e0e0e0;
     border-radius: 20px;
     overflow: hidden;
     height: 24px;
-    position: relative;
+    margin-right: 12px;
   }
   
   .fill {
     height: 100%;
     background: linear-gradient(90deg, rgba(170,78,177,1) 0%, rgba(113,53,172,1) 100%);
     border-radius: 20px;
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    padding-right: 8px;
-    color: white;
-    font-weight: bold;
-    font-size: 13px;
     transition: width 1.5s ease-in-out;
   }
   
-  .fill .value {
-    position: relative;
-    z-index: 2;
+  .score {
+    width: 40px;
+    text-align: right;
+    font-weight: bold;
+    font-size: 13px;
   }
   
 
