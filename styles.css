@@ -301,90 +301,53 @@ nav a { /* stile per i link nella barra di navigazione */
 }
 /* css barra di navigazione */
 
-/* css i miei lavori */
-.carousel-container { /* contenitore carosello */
-    position: relative; /* serve per poter mettere le frecce */
-    display: flex; /* allineare gli elementi orizontalmente */
-    align-items: center; /* elementi dentro il carosello centrati verticalmente */
-    width: 100%;
-    max-width: 1000px; /* Limita la larghezza */
-    overflow: hidden; /* Evita che elementi fuori dal carosello escano */
-}
 
-.carousel {
-    display: flex;
-    overflow: hidden; /* serve a mostrare solo gli elementi visibili dentro la finestra */
-    scroll-behavior: smooth; /* scorrimento con la freccia morbido */
-    white-space: nowrap; /* nessun ritorno a capo, così gli elementi rimangono sulla stessa linea */
-    width: 100%; /* larghezza */
-    max-width: 1000px; /* Evita espansioni indesiderate */
-    flex-wrap: nowrap; /* Impedisce agli elementi di andare a capo */
-}
 
-.carousel div { /* stile degli elementi dentro il carosello */
-    min-width: 250px; /* dimensione fissa */
-    height: 200px; /* dimensione fissa */
-    background: rgba(170, 78, 177, 0.7);
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 10px; /* bordi arrotondati */
-    font-size: 18px;
-    margin: 0 5px; /* margine tra gli elementi */
-    cursor: pointer; /* indica che gli elementi sono cliccabili */
-}
 
-.arrow { /* stile per freccia di navigazione */
+
+
+.banner{
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+  overflow: hidden;
+  position: relative;
+}
+ 
+.banner .slider{
     position: absolute;
-    background: rgba(0, 0, 0, 0.5);
-    color: white;
-    border: none;
-    padding: 10px;
-    cursor: pointer;
-    font-size: 18px;
+    width: 200px;
+    height: 250px;
+    top: 10%;
+    left: calc(50% - 100px);
+}
+  
+.banner .slider .item{
+    position: absolute;
+    inset: 0 0 0 0;
 }
 
-.arrow-left { /* posizione frecce */
-    left: 0;
-}
-
-.arrow-right { /* posizione frecce */
-    right: 0;
-}
-
-.modal { /* finestra popup */
-display: none; /* Nasconde la modale all'avvio */
-position: fixed; /* copre tutto lo schermo */
-z-index: 1000; /* sta sopra a tutti gli altri elementi */
-left: 0;
-top: 0;
-width: 100%;
-height: 100%;
-background-color: rgba(0, 0, 0, 0.8);
-display: flex;
-justify-content: center;
-align-items: center;
+.banner .slider .item img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 
-.modal-content { /* contenuto interno del popup */
-    background: white;
-    padding: 20px;
-    border-radius: 10px;
-    width: 60%;
-    text-align: center;
-}
 
-.close { /* pulsante di chiusura */
-    position: absolute; /* per posizionarlo in alto a destra */
-    top: 10px;
-    right: 20px;
-    font-size: 30px;
-    cursor: pointer; /* in modo che sia cliccabile */
-    color: white;
-}
-/* css i miei lavori */
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* css mappa */
