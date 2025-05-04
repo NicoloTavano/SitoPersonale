@@ -158,9 +158,9 @@ opacity: 0.5; /* Riduce l'opacità al 50% quando ci passi sopra */
 /* css contenitori */
 .container {   /* larghezza della pagina */
     width: 70%; 
-    max-width: 1000px;
+    max-width: 1200px;
     margin: 0 auto; /* centra il contenitore */
-    padding: 20px; /* spaziatura interna */
+    padding: 40px 20px; /* spaziatura interna */
 }
 
 .section {   /* contenitore */
