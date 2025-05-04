@@ -321,23 +321,11 @@ nav a { /* stile per i link nella barra di navigazione */
   text-align: center;
   overflow: hidden;
   position: relative;
-  transform: scale(0.85);
+  transform: scale(0.75);
   transform-origin: center;
   margin: 40px auto;
 }
  
-
-
-.slider {
-  display: flex;
-  flex-wrap: nowrap;
-  overflow: hidden;
-  align-items: center;
-  justify-content: center;
-  gap: 20px;
-}
-
-
 
 .banner .slider{
     position: absolute;
