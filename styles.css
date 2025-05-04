@@ -283,40 +283,38 @@ h3, h4 {
 
 
 
-.servizi-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 20px;
-}
-
-.servizio-card {
-  background: #fafafa;
-  border: 2px solid #ccc;
+#servizi .servizio {
+  border: 1px solid #ddd;
+  margin-bottom: 20px;
   border-radius: 10px;
+  overflow: hidden;
+  background: #f9f9f9;
+  transition: all 0.3s ease;
+}
+
+.servizio-header {
   padding: 15px;
+  background: #e7e0ef;
   cursor: pointer;
-  transition: transform 0.3s;
 }
 
-.servizio-card:hover {
-  transform: scale(1.03);
+.servizio-header h3 {
+  margin: 0;
+  font-family: 'LEMON MILK', sans-serif;
+  color: #1E0133;
 }
 
-.servizio-card img {
-  width: 100%;
-  height: auto;
-  border-radius: 8px;
-}
-
-.servizio-dettagli {
+.servizio-content {
   display: none;
-  margin-top: 10px;
+  padding: 15px;
+  background: white;
 }
 
-.servizio-card.active .servizio-dettagli {
-  display: block;
+.servizio-content img {
+  max-width: 100%;
+  border-radius: 5px;
+  margin-bottom: 10px;
 }
-
 
 
 

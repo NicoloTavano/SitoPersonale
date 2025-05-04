@@ -1,3 +1,4 @@
-function toggleServizio(card) {
-    card.classList.toggle("active");
+function toggleServizio(element) {
+    const content = element.nextElementSibling;
+    content.style.display = content.style.display === "block" ? "none" : "block";
   }
