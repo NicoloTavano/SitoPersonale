@@ -219,11 +219,7 @@ opacity: 0.5; /* Riduce l'opacità al 50% quando ci passi sopra */
 
 
 
-.section {
-    max-width: 600px;
-    margin: 0 auto;
-    padding: 20px;
-  }
+/* css competenze */
   
   .skill-bar {
     margin: 12px 0;
