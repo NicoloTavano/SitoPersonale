@@ -169,7 +169,6 @@ opacity: 0.5; /* Riduce l'opacità al 50% quando ci passi sopra */
     padding: 20px;  /* spaziatura interna */
     margin: 20px 0;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* ombra leggera del contenitore */
-
   }
 
 
