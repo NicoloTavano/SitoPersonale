@@ -323,6 +323,7 @@ nav a { /* stile per i link nella barra di navigazione */
     transform-style: preserve-3d;
     transform: perspective(1000px);
     animation: autoRun 20s linear infinite;
+    z-index: 2;
 }
   
 @keyframes autoRun{
@@ -347,8 +348,18 @@ nav a { /* stile per i link nella barra di navigazione */
     object-fit: cover;
 }
 
-
-
+.banner .model{
+    background-image: url(jpg/io\ vett.png);
+    width: 100%;
+    height: 75vh;
+    position: absolute;
+    bottom: 0
+    left: 0;
+    background-size: auto 130%;
+    background-repeat: no-repeat;
+    background-position: top center;
+    z-index: 1;
+}    
 
 
 
