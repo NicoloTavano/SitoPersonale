@@ -327,7 +327,9 @@ nav a { /* stile per i link nella barra di navigazione */
 .banner .slider .item{
     position: absolute;
     inset: 0 0 0 0;
-    transform: translateZ(550px);
+    transform: 
+        rotateY(calc( (var(--position) - 1) * (360 / var(--quantity)) *1deg))    
+        translateZ(550px);
 }
 
 .banner .slider .item img{
