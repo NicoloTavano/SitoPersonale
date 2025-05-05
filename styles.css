@@ -149,6 +149,8 @@ opacity: 0.5; /* Riduce l'opacità al 50% quando ci passi sopra */
     padding: 50px 20px;
     position: relative;
     z-index: 1;
+    margin-top: -6px
+    margin-bottom: -20px;
   }
 
 
