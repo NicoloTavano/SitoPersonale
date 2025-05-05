@@ -179,8 +179,8 @@ opacity: 0.5; /* Riduce l'opacità al 50% quando ci passi sopra */
     text-align: justify;
     font-size: 16px;
     line-height: 1.5;
-    margin-top: auto;
-    margin-bottom: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
   }
 
 
