@@ -168,10 +168,19 @@ opacity: 0.5; /* Riduce l'opacità al 50% quando ci passi sopra */
 .section {   /* contenitore */
     background: rgb(255, 255, 255);
     border-radius: 10px; /* bordi arrotondati */
-    padding: 20px;  /* spaziatura interna */
-    margin: 20px 0;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* ombra leggera del contenitore */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* opzionale, se vuoi centrare anche verticalmente */
+    max-width: 800px;        /* limita la larghezza per un layout più leggibile */
+    margin: 0 auto;          /* centra orizzontalmente il contenitore */
+    padding: 20px;
+    text-align: justify;
+    font-size: 16px;
+    line-height: 1.5;
   }
+
 
 
 @media (max-width: 768px) {
@@ -192,18 +201,7 @@ opacity: 0.5; /* Riduce l'opacità al 50% quando ci passi sopra */
 
 
 /* css chi sono */
-#chisono {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center; /* opzionale, se vuoi centrare anche verticalmente */
-    max-width: 800px;        /* limita la larghezza per un layout più leggibile */
-    margin: 0 auto;          /* centra orizzontalmente il contenitore */
-    padding: 20px;
-    text-align: justify;
-    font-size: 16px;
-    line-height: 1.5;
-}
+
 
 
 /* Adattamento per schermi piccoli (mobile) */
