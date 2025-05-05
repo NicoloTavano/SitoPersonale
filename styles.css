@@ -358,13 +358,13 @@ nav a { /* stile per i link nella barra di navigazione */
 
 .banner{
   width: 181%;
-  height: 150vh;
+  height: 130vh;
   text-align: center;
   overflow: hidden;
   position: relative;
   transform: scale(0.55);
   transform-origin: center;
-  margin left: -191px;
+  margin-left: -191px;
 }
  
 
