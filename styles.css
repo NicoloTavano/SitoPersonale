@@ -174,7 +174,7 @@ opacity: 0.5; /* Riduce l'opacità al 50% quando ci passi sopra */
     justify-content: center; /* opzionale, se vuoi centrare anche verticalmente */
     max-width: 800px;        /* limita la larghezza per un layout più leggibile */
     margin: 0 auto;          /* centra orizzontalmente il contenitore */
-    padding: 20px 10px;          /* spaziatura interna */
+    padding: 5px 20px;          /* spaziatura interna */
     text-align: justify;
     font-size: 16px;
     line-height: 1.5;
