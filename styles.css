@@ -162,7 +162,7 @@ opacity: 0.5; /* Riduce l'opacità al 50% quando ci passi sopra */
     width: 70%; 
     max-width: 1200px;
     margin: 0 auto; /* centra il contenitore */
-    padding: 40px 20px; /* spaziatura interna */
+    padding: 20px 20px; /* spaziatura interna */
 }
 
 .section {   /* contenitore */
