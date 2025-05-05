@@ -410,7 +410,7 @@ nav a { /* stile per i link nella barra di navigazione */
     position: absolute;
     bottom: 0;
     left: 0;
-    background-size: auto 130%;
+    background-size: auto 100%;
     background-repeat: no-repeat;
     background-position: top center;
     z-index: 3;
