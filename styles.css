@@ -180,6 +180,8 @@ opacity: 0.5; /* Riduce l'opacità al 50% quando ci passi sopra */
     line-height: 1.5;
     margin-top: 20px;
     margin-bottom: 20px;
+    margin-left: -20px;
+    margin-right: -20px;
   }
 
 
