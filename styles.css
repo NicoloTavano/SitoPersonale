@@ -212,7 +212,8 @@ opacity: 0.5; /* Riduce l'opacità al 50% quando ci passi sopra */
 }
 
 .chisono-logo img {
-  width: 150px;
+ width: 20vw; /* 20% della larghezza dello schermo */
+max-width: 200px; /* limite massimo */
   transition: transform 1s ease;
   transform-style: preserve-3d;
 }
