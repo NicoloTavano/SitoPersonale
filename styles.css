@@ -204,6 +204,13 @@ opacity: 0.5; /* Riduce l'opacità al 50% quando ci passi sopra */
 
 /* css chi sono */
 
+.chisono-content {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  perspective: 1000px; /* necessario per il 3D */
+}
+
 .chisono-logo img {
   width: 150px;
   transition: transform 1s ease;
