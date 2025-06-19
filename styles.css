@@ -204,6 +204,14 @@ opacity: 0.5; /* Riduce l'opacità al 50% quando ci passi sopra */
 
 /* css chi sono */
 
+.chisono-logo img {
+  width: 150px;
+  transition: transform 1s ease;
+}
+
+.chisono-logo img:hover {
+  transform: rotate(360deg);
+}
 
 
 /* Adattamento per schermi piccoli (mobile) */
@@ -213,6 +221,10 @@ opacity: 0.5; /* Riduce l'opacità al 50% quando ci passi sopra */
         text-align: center;
         gap: 10px;
     }
+
+  .chisono-logo img {
+    width: 120px;
+  }
 
 }
 /* css chi sono */
