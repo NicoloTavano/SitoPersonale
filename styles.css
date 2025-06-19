@@ -473,6 +473,7 @@ gap: 15px; /* spazio uniforme tra gli elementi */
 border-radius: 10px;
 padding: 20px;
 box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+text-align: center;
 }
 
 
