@@ -162,7 +162,7 @@ opacity: 0.5; /* Riduce l'opacità al 50% quando ci passi sopra */
     width: 70%; 
     max-width: 1200px;
     margin: 0 auto; /* centra il contenitore */
-    padding: 10px 10px; /* spaziatura interna */
+    padding: 20px 20px; /* spaziatura interna */
 }
 
 .section {   /* contenitore */
@@ -175,7 +175,7 @@ opacity: 0.5; /* Riduce l'opacità al 50% quando ci passi sopra */
     justify-content: center; /* opzionale, se vuoi centrare anche verticalmente */
     max-width: 800px;        /* limita la larghezza per un layout più leggibile */
     margin: 0 auto;          /* centra orizzontalmente il contenitore */
-    padding: 5px;
+    padding: none;
     text-align: justify;
     font-size: 16px;
     line-height: 1.5;
