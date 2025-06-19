@@ -486,7 +486,7 @@ gap: 5px;
 
 label { /* etichette, testi sopra i vari campi */
 font-weight: bold;
-color: rgba(170, 78, 177, 0.7);
+color: #333;
 text-align: center;
 }
 
