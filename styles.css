@@ -171,11 +171,12 @@ opacity: 0.5; /* Riduce l'opacità al 50% quando ci passi sopra */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* ombra leggera del contenitore */
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: stretch !important;
     justify-content: center; /* opzionale, se vuoi centrare anche verticalmente */
-    max-width: 800px;        /* limita la larghezza per un layout più leggibile */
+    max-width: none !important;        /* limita la larghezza per un layout più leggibile */
+    width: 100% !important;
     margin: 0 auto;          /* centra orizzontalmente il contenitore */
-    padding: 0;
+    padding: 0 !important;
     text-align: justify;
     font-size: 16px;
     line-height: 1.5;
