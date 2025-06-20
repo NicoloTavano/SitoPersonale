@@ -514,7 +514,7 @@ box-shadow: 0px 0px 8px rgba(170, 78, 177, 0.7); /* ombra luminosa */
   text-align: left;
   font-weight: normal;
   font-size: 13px;
-  color: white;
+  color: rgb(0, 0, 0);
 }
 
 button { /* pulsante di invio */
