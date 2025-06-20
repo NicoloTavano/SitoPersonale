@@ -466,10 +466,7 @@ box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Ombra leggera */
 
 
 /* css contatti */
-/* Font coerente */
-.container, label, select, input, textarea, button, p {
-  font-family: 'LEMON MILK', sans-serif; /* puoi cambiare con il font che usi nel titolo */
-}
+
 /* Contenitore */
 form {
   display: flex;
