@@ -120,7 +120,7 @@ background-color: rgba(170, 78, 177, 0.7); /* riquadro viola */
   gap: 5px;
   cursor: pointer;
   position: absolute;
-   left: 500px;
+   left: 570px;
   top: 20px;
   z-index: 1001;
 }
