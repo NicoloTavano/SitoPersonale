@@ -59,7 +59,8 @@ height: 50px;
 }
 
 .header-info nav a {  /* stile per i link di navigazione */
-color: rgba(170, 78, 177, 0.7);
+ font-family: 'LEMON MILK', sans-serif;
+  color: rgba(170, 78, 177, 0.7);
 text-decoration: none;  /* no sottolineatura */
 margin: 0 15px;
 font-size: 18px;
