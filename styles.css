@@ -262,7 +262,7 @@ background-color: rgba(170, 78, 177, 0.7); /* riquadro viola */
 
 @media (max-width: 768px) {
   .container {
-    width: 95%; /* più stretto su mobile */
+    width: 75%; /* più stretto su mobile */
     padding: 0 10px;
   }
 
