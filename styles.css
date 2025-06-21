@@ -58,18 +58,21 @@ z-index: 1000; /* garantisce che sia sopra agli altri elementi della pagina */
 height: 50px;
 }
 
-.header-info nav a {  /* stile per i link di navigazione */
-color: rgba(170, 78, 177, 0.7);
-text-decoration: none;  /* no sottolineatura */
-margin: 0 15px;
-font-size: 18px;
-font-weight: bold;
-transition: opacity 0.3s ease-in-out; /* transizione fluida per l'opacità */
+.header-info nav a {
+  font-family: 'LEMON MILK', sans-serif; /* usa il font già incluso */
+  color: rgba(170, 78, 177, 0.7);
+  text-decoration: none;
+  margin: 0 15px;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 8px 12px; /* per dare spazio interno al riquadro */
+  border-radius: 5px;
+  transition: all 0.3s ease-in-out;
 }
 
 .header-info nav a:hover {
-opacity: 0.5; /* Riduce l'opacità al 50% quando ci passi sopra */
-}
+  background-color: rgba(170, 78, 177, 0.7); /* riquadro viola */
+  color: white; /* testo bianco */
 /* css intestazione */
 
 /* css hero */
