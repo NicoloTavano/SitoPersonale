@@ -271,7 +271,7 @@ background-color: rgba(170, 78, 177, 0.7); /* riquadro viola */
     max-width: 90%;
     margin: 20px auto;
     padding: 15px;
-    font-size: 15px;
+    font-size: 14px !important;
     line-height: 1.6;
     text-align: left;
     box-sizing: border-box;
