@@ -261,10 +261,25 @@ background-color: rgba(170, 78, 177, 0.7); /* riquadro viola */
 
 
 @media (max-width: 768px) {
-    .container {
-        width: 90%; /* Occupa più spazio su schermi piccoli */
-    }
+  .container {
+    width: 95%; /* più stretto su mobile */
+    padding: 0 10px;
+  }
+
+  .section {
+    padding: 15px 20px; /* meno padding interno */
+    font-size: 15px;     /* testo leggermente più piccolo */
+    line-height: 1.6;
+    text-align: left;    /* meglio su mobile, meno faticoso da leggere */
+  }
+
+  .section > div {
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
+
 
 .section:first-of-type {
     margin-top: 100px; /* Aggiunge più spazio sopra solo alla prima */
