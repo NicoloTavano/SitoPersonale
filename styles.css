@@ -79,7 +79,7 @@ background-color: rgba(170, 78, 177, 0.7); /* riquadro viola */
 /* NAV MOBILE - stato iniziale nascosto */
 @media (max-width: 768px) {
   .header-info nav {
-    display: flex;
+    display: none;
     flex-direction: column;
     align-items: center;
     gap: 10px;
@@ -97,6 +97,7 @@ background-color: rgba(170, 78, 177, 0.7); /* riquadro viola */
 
   /* NAV MOBILE ATTIVO */
   .header-info nav.active {
+    display: flex;
     opacity: 1;
     transform: translateY(0);
     pointer-events: all;
@@ -113,8 +114,8 @@ background-color: rgba(170, 78, 177, 0.7); /* riquadro viola */
   }
 
   /* Burger visibile su mobile */
-  .burger {
-  display: none;
+.burger {
+  display: flex;
   flex-direction: column;
   gap: 5px;
   cursor: pointer;
@@ -124,12 +125,11 @@ background-color: rgba(170, 78, 177, 0.7); /* riquadro viola */
   z-index: 1001;
 }
 
-  .burger .line {
-    width: 25px;
-    height: 3px;
-    background-color: white;
-    border-radius: 2px;
-  }
+.burger .line {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  border-radius: 2px;
 }
 
 
