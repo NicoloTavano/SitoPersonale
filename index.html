@@ -409,9 +409,21 @@ function toggleServizio(element) {
   const burger = document.getElementById('burger');
   const menu = document.getElementById('menu');
 
-  burger.addEventListener('click', () => {
+  // Apertura menu
+  burger.addEventListener('click', (e) => {
+    e.stopPropagation(); // previene chiusura immediata
     menu.classList.toggle('active');
   });
+
+  // Chiusura cliccando fuori dal menu
+  document.addEventListener('click', (e) => {
+    if (!menu.contains(e.target) && !burger.contains(e.target)) {
+      menu.classList.remove('active');
+    }
+  });
+
+
+  
 </script>
 
 
