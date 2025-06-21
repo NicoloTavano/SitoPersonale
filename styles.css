@@ -262,23 +262,28 @@ background-color: rgba(170, 78, 177, 0.7); /* riquadro viola */
 
 @media (max-width: 768px) {
   .container {
-    width: 95%; /* più stretto su mobile */
+    width: 95%;
     padding: 0 10px;
   }
 
   .section {
-    padding: 15px 20px; /* meno padding interno */
-    font-size: 15px;     /* testo leggermente più piccolo */
+    width: 100%;
+    max-width: 100%;
+    margin: 10px auto;
+    padding: 15px 15px;
+    font-size: 15px;
     line-height: 1.6;
-    text-align: left;    /* meglio su mobile, meno faticoso da leggere */
+    text-align: left;
+    box-sizing: border-box;
   }
 
   .section > div {
     width: 100%;
-    padding-left: 0;
-    padding-right: 0;
+    padding: 0;
+    box-sizing: border-box;
   }
 }
+
 
 
 .section:first-of-type {
