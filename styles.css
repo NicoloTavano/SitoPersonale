@@ -40,18 +40,17 @@ h2 {
 }
 /* css intestazione */
 header { /* intestazione */
-width: 100%; /* larghezza */
-background: rgb(0, 0, 0);
-color: white;
-display: flex; /* allineare contenuti orizzontalmente */
-align-items: center; /* allineare contenuti verticalmente */
-justify-content: space-between; /* spazia gli elementi */
-padding: 10px 20px; /* aggiunge spazio interno */
-position: fixed; /* posizione fissa con la header rimane visibile anche quando si scorre */
-top: 0;
-left: 0;
-z-index: 1000; /* garantisce che sia sopra agli altri elementi della pagina */
-
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: black;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  z-index: 1000;
 }
 
 .logo img {
