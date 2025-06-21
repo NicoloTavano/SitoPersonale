@@ -262,15 +262,15 @@ background-color: rgba(170, 78, 177, 0.7); /* riquadro viola */
 
 @media (max-width: 768px) {
   .container {
-    width: 95%;
-    padding: 0 10px;
+    width: 100%; /* contenitore generale: prende tutto */
+    padding: 0;
   }
 
   .section {
-    width: 100%;
-    max-width: 100%;
-    margin: 10px auto;
-    padding: 15px 15px;
+    width: 80%; /* <== restringe visivamente la sezione */
+    max-width: 90%;
+    margin: 20px auto;
+    padding: 15px;
     font-size: 15px;
     line-height: 1.6;
     text-align: left;
@@ -280,9 +280,9 @@ background-color: rgba(170, 78, 177, 0.7); /* riquadro viola */
   .section > div {
     width: 100%;
     padding: 0;
-    box-sizing: border-box;
   }
 }
+
 
 
 
