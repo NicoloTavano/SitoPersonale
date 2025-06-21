@@ -77,48 +77,58 @@ background-color: rgba(170, 78, 177, 0.7); /* riquadro viola */
 
 
 
-.burger {
-  display: none;
-  flex-direction: column;
-  cursor: pointer;
-  gap: 5px;
-}
-
-.burger .line {
-  width: 25px;
-  height: 3px;
-  background-color: white;
-  border-radius: 2px;
-}
-
-/* Mobile styles */
+/* NAV MOBILE - stato iniziale nascosto */
 @media (max-width: 768px) {
   .header-info nav {
-    display: none;
-    position: absolute;
-    top: 70px;
-    right: 0;
-    background-color: black;
-    width: 100%;
+    display: flex;
     flex-direction: column;
     align-items: center;
     gap: 10px;
-    padding: 20px 0;
+    background-color: black;
+    width: 100%;
+    position: absolute;
+    top: 70px;
+    right: 0;
+    opacity: 0;
+    transform: translateY(-20px);
+    pointer-events: none;
+    transition: all 0.3s ease-in-out;
     z-index: 999;
   }
 
+  /* NAV MOBILE ATTIVO */
+  .header-info nav.active {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: all;
+  }
+
+  /* Link menu mobile */
   .header-info nav a {
-    display: block;
     width: 100%;
     text-align: center;
     padding: 15px 0;
-    border-radius: 0;
     font-size: 18px;
+    color: rgba(170, 78, 177, 0.7);
+    font-family: 'LEMON MILK', sans-serif;
   }
 
+  /* Burger visibile su mobile */
   .burger {
     display: flex;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
   }
+
+  .burger .line {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    border-radius: 2px;
+  }
+}
+
 
   .header-info nav.active {
     display: flex;
