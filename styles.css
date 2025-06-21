@@ -602,7 +602,7 @@ button:hover {
   bottom: 20px;
   right: 20px;
   background-color: white;
-  color: rgba(170, 78, 177, 1); /* viola come il resto del sito */
+  color: rgba(170, 78, 177, 1);
   border: 2px solid rgba(170, 78, 177, 1);
   padding: 12px 18px;
   font-size: 15px;
@@ -613,12 +613,32 @@ button:hover {
   z-index: 999;
   transition: all 0.3s ease;
   font-family: 'Poppins', sans-serif;
+  display: flex;
+  align-items: center;
+  gap: 8px;
 }
 
+/* Hover effect */
 .bottone-fluttuante:hover {
   background-color: rgba(170, 78, 177, 1);
   color: white;
 }
+
+/* Responsive version */
+@media (max-width: 480px) {
+  .bottone-fluttuante {
+    bottom: 15px;
+    right: 15px;
+    padding: 10px 14px;
+    font-size: 13px;
+    gap: 6px;
+  }
+
+  .bottone-fluttuante i {
+    font-size: 14px;
+  }
+}
+
 /* css bottone contatti */
 
 
