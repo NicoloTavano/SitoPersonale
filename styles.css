@@ -69,7 +69,8 @@ transition: all 0.3s ease-in-out; /* transizione fluida per l'opacità */
 }
 
 .header-info nav a:hover {
-opacity: 0.5; /* Riduce l'opacità al 50% quando ci passi sopra */
+background-color: rgba(170, 78, 177, 0.7); /* riquadro viola */
+  color: white;
 }
 /* css intestazione */
 
