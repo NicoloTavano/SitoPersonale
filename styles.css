@@ -618,26 +618,28 @@ button:hover {
   gap: 8px;
 }
 
-/* Hover effect */
+/* Hover */
 .bottone-fluttuante:hover {
   background-color: rgba(170, 78, 177, 1);
   color: white;
 }
 
-/* Responsive version */
+/* Nasconde il testo solo su mobile */
 @media (max-width: 480px) {
+  .testo-bottone {
+    display: none;
+  }
+
   .bottone-fluttuante {
-    bottom: 15px;
-    right: 15px;
-    padding: 10px 14px;
-    font-size: 13px;
-    gap: 6px;
+    padding: 12px;
+    font-size: 18px;
   }
 
   .bottone-fluttuante i {
-    font-size: 14px;
+    font-size: 20px;
   }
 }
+
 
 /* css bottone contatti */
 
