@@ -373,7 +373,9 @@ nav a { /* stile per i link nella barra di navigazione */
 
 
 /* css i miei lavori */
-
+.container h2 {
+   color: #ffffff;
+}
 #imieilavori {
   padding-top: 120px;
   padding-bottom: 120px;
