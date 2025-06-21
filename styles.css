@@ -114,7 +114,7 @@ background-color: rgba(170, 78, 177, 0.7); /* riquadro viola */
 
   /* Burger visibile su mobile */
   .burger {
-     display: none;
+  display: none;
   flex-direction: column;
   gap: 5px;
   cursor: pointer;
