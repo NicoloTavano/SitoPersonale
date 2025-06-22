@@ -254,14 +254,13 @@
 
 <!-- MODALE GALLERIA FULLSCREEN -->
 <div id="galleryModal" class="modal" onclick="closeGallery()">
-  <span class="close">&times;</span>
+  <span class="close" onclick="closeGallery()">&times;</span>
   <img class="modal-img" id="modalImg">
   <div class="modal-nav">
     <button onclick="prevImage(event)">‹</button>
     <button onclick="nextImage(event)">›</button>
   </div>
 </div>
-
 
 
 
@@ -454,24 +453,16 @@ function toggleServizio(element) {
 let currentImages = [];
 let currentIndex = 0;
 
-document.querySelectorAll('.servizio .anteprima').forEach((img) => {
-  img.addEventListener('click', function (event) {
-    event.stopPropagation(); // evita chiusura immediata del modale
-    const servizio = this.closest('.servizio');
-    const gallery = JSON.parse(servizio.getAttribute('data-gallery'));
-    openGallery(gallery);
-  });
-});
-
 function openGallery(images) {
+  event.stopPropagation();
   currentImages = images;
   currentIndex = 0;
   document.getElementById('modalImg').src = currentImages[currentIndex];
-  document.getElementById('galleryModal').style.display = 'flex';
+  document.getElementById('galleryModal').classList.add('show');
 }
 
 function closeGallery() {
-  document.getElementById('galleryModal').style.display = 'none';
+  document.getElementById('galleryModal').classList.remove('show');
 }
 
 function nextImage(e) {
@@ -484,6 +475,21 @@ function prevImage(e) {
   e.stopPropagation();
   currentIndex = (currentIndex - 1 + currentImages.length) % currentImages.length;
   document.getElementById('modalImg').src = currentImages[currentIndex];
+}
+
+// Attiva galleria al click sulle anteprime
+document.querySelectorAll('.servizio .anteprima').forEach((img) => {
+  img.addEventListener('click', function (event) {
+    const servizio = this.closest('.servizio');
+    const gallery = JSON.parse(servizio.getAttribute('data-gallery'));
+    openGallery(gallery);
+  });
+});
+
+// Toggle delle sezioni
+function toggleServizio(header) {
+  const content = header.nextElementSibling;
+  content.style.display = (content.style.display === 'block') ? 'none' : 'block';
 }
 
 

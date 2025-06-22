@@ -407,7 +407,38 @@ h3, h4 {
 
 
 
+#servizi .servizio {
+  border: 1px solid #ddd;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  overflow: hidden;
+  background: #f9f9f9;
+  transition: all 0.3s ease;
+}
 
+.servizio-header {
+  padding: 15px;
+  background: #e7e0ef;
+  cursor: pointer;
+}
+
+.servizio-header h3 {
+  margin: 0;
+  font-family: 'LEMON MILK', sans-serif;
+  color: #1E0133;
+}
+
+.servizio-content {
+  display: none;
+  padding: 15px;
+  background: white;
+}
+
+.servizio-content img {
+  max-width: 100%;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
 
 /* MODALE GALLERIA */
 .modal {
@@ -422,10 +453,15 @@ h3, h4 {
   flex-direction: column;
 }
 
+.modal.show {
+  display: flex;
+}
+
 .modal-img {
   max-width: 90%;
   max-height: 80%;
   border-radius: 10px;
+  box-shadow: 0 0 20px black;
 }
 
 .modal-nav {
@@ -447,11 +483,12 @@ h3, h4 {
 
 .modal .close {
   position: absolute;
-  top: 15px;
+  top: 20px;
   right: 30px;
   font-size: 40px;
   color: white;
   cursor: pointer;
+  z-index: 10000;
 }
 
 .servizio .anteprima {
