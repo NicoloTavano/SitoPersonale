@@ -412,40 +412,50 @@ h3, h4 {
   overflow: hidden;
   margin-bottom: 20px;
   cursor: pointer;
-  position: relative;
+  transition: transform 0.3s ease;
+}
+
+.servizio:hover {
+  transform: scale(1.01);
 }
 
 .servizio-header {
-  height: 250px;
+  position: relative;
+  height: 200px;
   background-size: cover;
   background-position: center;
-  position: relative;
+  border-radius: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.servizio-header::after {
+.servizio-header.blurred::before {
   content: '';
   position: absolute;
-  inset: 0;
-  background: rgba(255,255,255,0.6);
-  backdrop-filter: blur(5px);
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(3px) brightness(0.6); /* effetto sfocato e scurito */
   z-index: 1;
+  border-radius: 10px;
 }
 
 .overlay {
   position: relative;
   z-index: 2;
+  color: white;
   text-align: center;
-  padding: 20px;
+  padding: 10px;
 }
 
-.overlay h3,
-.overlay p {
-  margin: 0;
-  color: #1E0133;
+.overlay h3 {
   font-family: 'LEMON MILK', sans-serif;
+  margin-bottom: 5px;
+}
+
+.overlay p {
+  font-size: 14px;
 }
 
 .modal {
