@@ -177,14 +177,14 @@
 
 
 
-
+jpg/personal brand.jpg
 
 <div id="servizi" class="section">
   <div class="container">
     <h2>I miei Servizi</h2>
 
-   <div class="servizio" data-gallery='["jpg/personal brand.jpg"]'>
-  <div class="servizio-header" onclick="openGallery(['jpg/personal brand.jpg'])" style="background-image: url('jpg/personal brand.jpg');">
+ <div class="servizio" onclick="openGallery('jpg/personal brand.jpg')">
+  <div class="servizio-header" style="background-image: url('jpg/personal brand.jpg');">
     <div class="overlay">
       <h3>BRAND IDENTITY E LOGO DESIGN</h3>
       <p>Creazione di loghi e immagine coordinata per aziende e professionisti.</p>
@@ -392,11 +392,11 @@ function toggleServizio(element) {
 
 
 
-
-function openGallery(images) {
-  event.stopPropagation();
-  document.getElementById('modalImg').src = images[0];
-  document.getElementById('galleryModal').classList.add('show');
+function openGallery(imgSrc) {
+  const modal = document.getElementById('galleryModal');
+  const modalImg = document.getElementById('modalImg');
+  modalImg.src = imgSrc;
+  modal.classList.add('show');
 }
 
 function closeGallery() {
@@ -417,9 +417,10 @@ function closeGallery() {
 
 <div id="galleryModal" class="modal" onclick="closeGallery()">
   <span class="close" onclick="closeGallery()">&times;</span>
-  <img class="modal-img" id="modalImg">
+  <div class="modal-content">
+    <img id="modalImg" src="" alt="Anteprima progetto">
+  </div>
 </div>
-
 
 
 
