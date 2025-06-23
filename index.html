@@ -396,6 +396,7 @@ function openGallery(imgSrc) {
   const modal = document.getElementById('galleryModal');
   const modalImg = document.getElementById('modalImg');
   modalImg.src = imgSrc;
+  modal.scrollTop = 0;
   modal.classList.add('show');
 }
 
@@ -414,11 +415,12 @@ function closeGallery() {
 
 
 
-
 <div id="galleryModal" class="modal" onclick="closeGallery()">
   <span class="close" onclick="closeGallery()">&times;</span>
   <div class="modal-content">
-    <img id="modalImg" src="" alt="Anteprima progetto">
+    <div class="img-wrapper">
+      <img id="modalImg" src="" alt="Anteprima progetto">
+    </div>
   </div>
 </div>
 

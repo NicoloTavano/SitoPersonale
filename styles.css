@@ -420,14 +420,17 @@ h3, h4 {
   background-size: cover;
   background-position: center;
   position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .servizio-header::after {
   content: '';
   position: absolute;
   inset: 0;
-  background: rgba(255,255,255,0.6); /* opacità sopra l'immagine */
-  backdrop-filter: blur(4px); /* sfocatura dell'immagine */
+  background: rgba(255,255,255,0.6);
+  backdrop-filter: blur(5px);
   z-index: 1;
 }
 
@@ -435,7 +438,7 @@ h3, h4 {
   position: relative;
   z-index: 2;
   text-align: center;
-  padding: 30px 20px;
+  padding: 20px;
 }
 
 .overlay h3,
@@ -455,8 +458,9 @@ h3, h4 {
   height: 100%;
   background-color: rgba(0,0,0,0.9);
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   overflow: auto;
+  padding-top: 50px; /* distanza dall’alto */
 }
 
 .modal.show {
@@ -464,17 +468,24 @@ h3, h4 {
 }
 
 .modal-content {
-  padding: 20px;
   max-width: 90%;
-  max-height: 90%;
+  max-height: 60vh;
+  overflow-y: auto;
+  background: transparent;
+  border-radius: 10px;
+}
+
+.img-wrapper {
   overflow: auto;
+  max-height: 60vh;
 }
 
 .modal img {
   width: 100%;
   height: auto;
   object-fit: contain;
-  border-radius: 10px;
+  display: block;
+  margin: 0 auto;
 }
 
 .modal .close {
