@@ -407,47 +407,62 @@ h3, h4 {
 
 
 
-#servizi .servizio {
-  border: 1px solid #ddd;
-  margin-bottom: 20px;
+.servizio {
   border-radius: 10px;
   overflow: hidden;
-  background: #f9f9f9;
-  transition: all 0.3s ease;
+  margin-bottom: 20px;
+  cursor: pointer;
+  position: relative;
 }
 
 .servizio-header {
-  padding: 15px;
-  background: #e7e0ef;
-  cursor: pointer;
+  height: 250px;
+  background-size: cover;
+  background-position: center;
+  filter: blur(2px);
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.servizio-header h3 {
+.servizio-header .overlay {
+  background-color: rgba(255, 255, 255, 0.75);
+  padding: 30px;
+  text-align: center;
+  filter: none; /* testo non sfocato */
+  z-index: 2;
+  position: relative;
+  border-radius: 10px;
+  width: 90%;
+}
+
+.servizio-header h3,
+.servizio-header p {
   margin: 0;
-  font-family: 'LEMON MILK', sans-serif;
   color: #1E0133;
+  font-family: 'LEMON MILK', sans-serif;
+  text-shadow: none;
 }
 
-.servizio-content {
-  display: none;
-  padding: 15px;
-  background: white;
+.servizio-header::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: inherit;
+  filter: blur(5px);
+  z-index: 1;
 }
 
-.servizio-content img {
-  max-width: 100%;
-  border-radius: 5px;
-  margin-bottom: 10px;
-}
-
-/* MODALE GALLERIA */
 .modal {
   display: none;
   position: fixed;
   z-index: 9999;
-  left: 0; top: 0;
-  width: 100%; height: 100%;
-  background-color: rgba(0, 0, 0, 0.85);
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.85);
   justify-content: center;
   align-items: center;
   flex-direction: column;
@@ -461,24 +476,6 @@ h3, h4 {
   max-width: 90%;
   max-height: 80%;
   border-radius: 10px;
-  box-shadow: 0 0 20px black;
-}
-
-.modal-nav {
-  display: flex;
-  justify-content: space-between;
-  width: 100px;
-  margin-top: 10px;
-}
-
-.modal-nav button {
-  background: white;
-  color: #6a1c6f;
-  border: none;
-  font-size: 24px;
-  padding: 5px 10px;
-  border-radius: 8px;
-  cursor: pointer;
 }
 
 .modal .close {
@@ -488,18 +485,7 @@ h3, h4 {
   font-size: 40px;
   color: white;
   cursor: pointer;
-  z-index: 10000;
 }
-
-.servizio .anteprima {
-  cursor: pointer;
-  transition: 0.3s;
-}
-
-.servizio .anteprima:hover {
-  opacity: 0.8;
-}
-
 
 
 
