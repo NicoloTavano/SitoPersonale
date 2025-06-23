@@ -183,7 +183,7 @@ jpg/personal brand.jpg
   <div class="container">
     <h2>I miei Servizi</h2>
 
- <div class="servizio" onclick="openGallery('jpg/personal brand.jpg')">
+<div class="servizio" onclick="openGallery('jpg/personal brand.jpg')">
   <div class="servizio-header" style="background-image: url('jpg/personal brand.jpg');">
     <div class="overlay">
       <h3>BRAND IDENTITY E LOGO DESIGN</h3>
@@ -396,14 +396,15 @@ function openGallery(imgSrc) {
   const modal = document.getElementById('galleryModal');
   const modalImg = document.getElementById('modalImg');
   modalImg.src = imgSrc;
-  modal.scrollTop = 0;
   modal.classList.add('show');
 }
 
-function closeGallery() {
-  document.getElementById('galleryModal').classList.remove('show');
+function closeGallery(e) {
+  // chiude solo se si clicca fuori dall’immagine o sulla X
+  if (e.target.id === 'galleryModal' || e.target.classList.contains('close')) {
+    document.getElementById('galleryModal').classList.remove('show');
+  }
 }
-
 
 
 
@@ -415,12 +416,10 @@ function closeGallery() {
 
 
 
-<div id="galleryModal" class="modal" onclick="closeGallery()">
-  <span class="close" onclick="closeGallery()">&times;</span>
-  <div class="modal-content">
-    <div class="img-wrapper">
-      <img id="modalImg" src="" alt="Anteprima progetto">
-    </div>
+<div id="galleryModal" class="modal" onclick="closeGallery(event)">
+  <span class="close" onclick="closeGallery(event)">&times;</span>
+  <div class="modal-inner">
+    <img id="modalImg" src="" alt="Anteprima progetto">
   </div>
 </div>
 
