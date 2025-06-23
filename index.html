@@ -388,15 +388,19 @@ function openGallery(imgSrc) {
   const modal = document.getElementById('galleryModal');
   const modalImg = document.getElementById('modalImg');
   modalImg.src = imgSrc;
+  modalImg.classList.remove('zoomed');
   modal.classList.add('show');
 }
 
 function closeGallery(e) {
-  // chiudi solo se clicco sulla X o sull'overlay, NON sull'immagine
   if (e.target.classList.contains('modal-overlay') || e.target.classList.contains('close')) {
     document.getElementById('galleryModal').classList.remove('show');
   }
 }
+
+document.getElementById('modalImg').addEventListener('click', function () {
+  this.classList.toggle('zoomed');
+});
 
 
 
@@ -412,7 +416,9 @@ function closeGallery(e) {
   <div class="modal-overlay" onclick="closeGallery(event)">
     <div class="modal-inner">
       <span class="close" onclick="closeGallery(event)">&times;</span>
-      <img id="modalImg" src="" alt="Anteprima progetto">
+      <div class="zoom-container">
+        <img id="modalImg" src="" alt="Anteprima progetto">
+      </div>
     </div>
   </div>
 </div>

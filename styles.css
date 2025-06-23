@@ -477,18 +477,30 @@ h3, h4 {
 .modal-inner {
   background: white;
   border-radius: 10px;
-  overflow: hidden;
-  max-width: 800px;
-  width: 100%;
+  overflow: auto;
+  max-width: 95%;
   max-height: 90vh;
   position: relative;
+  padding: 10px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.6);
+}
+
+.zoom-container {
+  overflow: auto;
+  touch-action: pinch-zoom; /* abilitato per dispositivi mobili */
 }
 
 .modal-inner img {
   width: 100%;
-  max-height: 90vh;
+  height: auto;
   object-fit: contain;
-  display: block;
+  cursor: zoom-in;
+  transition: transform 0.3s ease;
+}
+
+.modal-inner img.zoomed {
+  transform: scale(1.7);
+  cursor: zoom-out;
 }
 
 .modal .close {
@@ -504,6 +516,7 @@ h3, h4 {
   cursor: pointer;
   z-index: 10000;
 }
+
 
 
 
