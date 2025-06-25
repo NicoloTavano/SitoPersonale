@@ -585,7 +585,7 @@ nav a { /* stile per i link nella barra di navigazione */
   align-items: center;
   overflow: hidden;
   position: relative;
-  transform: scale(0.8); /* ← scala tutto, proporzioni incluse */
+  transform: scale(0.4); /* ← scala tutto, proporzioni incluse */
   transform-origin: center;
 }
  
