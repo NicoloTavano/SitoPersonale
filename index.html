@@ -451,28 +451,28 @@ function toggleServizio(element) {
 
 
 
-  // Funzione per aprire il popup con immagine
-  function openGallery(imgSrc) {
+  document.addEventListener('DOMContentLoaded', () => {
     const modal = document.getElementById('galleryModal');
     const modalImg = document.getElementById('modalImg');
-    modalImg.src = imgSrc;
-    modalImg.classList.remove('zoomed');
-    modal.classList.add('show');
-  }
 
-  // Funzione per chiudere il popup cliccando fuori o sulla X
-  function closeGallery(e) {
-    if (e.target.classList.contains('modal-overlay') || e.target.classList.contains('close')) {
-      document.getElementById('galleryModal').classList.remove('show');
+    // Apri popup
+    window.openGallery = function(imgSrc) {
+      modalImg.src = imgSrc;
+      modalImg.classList.remove('zoomed');
+      modal.classList.add('show');
     }
-  }
 
-  // Gestione zoom con click su desktop
-  document.addEventListener('DOMContentLoaded', () => {
-    const modalImg = document.getElementById('modalImg');
+    // Chiudi popup cliccando fuori o sulla X
+    window.closeGallery = function(e) {
+      if (e.target.classList.contains('modal-overlay') || e.target.classList.contains('close')) {
+        modal.classList.remove('show');
+        modalImg.classList.remove('zoomed');
+      }
+    }
 
+    // Zoom al click (solo su desktop)
     modalImg.addEventListener('click', () => {
-      if (window.innerWidth > 768) {  // Attiva solo su desktop
+      if (window.innerWidth > 768) {
         modalImg.classList.toggle('zoomed');
       }
     });
