@@ -504,14 +504,6 @@ h3, h4 {
 }
 
 .modal-inner img {
-  width: 100%;
-  height: auto;
-  object-fit: contain;
-  cursor: zoom-in;
-  transition: transform 0.3s ease;
-}
-
-.modal-inner img {
   max-width: 90vw;
   max-height: 85vh;
   width: auto;
@@ -521,6 +513,11 @@ h3, h4 {
   transition: transform 0.3s ease;
   display: block;
   margin: 0 auto;
+}
+
+.modal-inner img.zoomed {
+  transform: scale(1.7);
+  cursor: zoom-out;
 }
 
 .modal .close {
