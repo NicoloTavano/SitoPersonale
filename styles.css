@@ -577,28 +577,29 @@ nav a { /* stile per i link nella barra di navigazione */
 }
 
 
-.banner{
-  width: 181%;
-  height: 100vh;
-  text-align: center;
-  overflow: visible;
+.banner {
+  width: 100%; /* non serve 181% */
+  height: 130vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
   position: relative;
   transform: scale(0.55);
   transform-origin: center;
-  margin-left: -83vh;
 }
  
 
-.banner .slider{
-    position: absolute;
-    width: 200px;
-    height: 250px;
-    top: 10%;
-    left: calc(50% - 100px);
-    transform-style: preserve-3d;
-    transform: perspective(1000px);
-    animation: autoRun 20s linear infinite;
-    z-index: 4;
+.banner .slider {
+  position: absolute;
+  width: 200px;
+  height: 250px;
+  top: 10%;
+  left: 50%;
+  transform: translateX(-50%) perspective(1000px);
+  transform-style: preserve-3d;
+  animation: autoRun 20s linear infinite;
+  z-index: 4;
 }
   
 @keyframes autoRun{
