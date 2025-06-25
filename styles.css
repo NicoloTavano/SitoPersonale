@@ -592,7 +592,7 @@ nav a { /* stile per i link nella barra di navigazione */
   width: 200px;
   height: 250px;
   transform-style: preserve-3d;
-  transform: perspective(1000px) rotateX(-16deg) rotateY(0deg) scale(0.55);
+  transform: perspective(1000px) rotateX(-16deg) rotateY(0deg) scale(0.4); /* ← ridotto da 0.55 a 0.4 */
   animation: autoRun 20s linear infinite;
   position: relative;
   z-index: 4;
