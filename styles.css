@@ -570,8 +570,8 @@ nav a { /* stile per i link nella barra di navigazione */
 
 /* css i miei lavori */
 #imieilavori {
-  padding-top: 120px;
-  padding-bottom: 120px;
+  padding-top: 40px;
+  padding-bottom: 40px;
   position: relative;
   z-index: 1;
 }
@@ -579,7 +579,7 @@ nav a { /* stile per i link nella barra di navigazione */
 
 .banner{
   width: 181%;
-  height: 130vh;
+  height: 100vh;
   text-align: center;
   overflow: hidden;
   position: relative;
