@@ -592,18 +592,18 @@ nav a { /* stile per i link nella barra di navigazione */
   width: 200px;
   height: 250px;
   transform-style: preserve-3d;
+  transform: perspective(1000px) rotateX(-16deg) rotateY(0deg) scale3d(0.4, 0.4, 0.4);
   animation: autoRun 20s linear infinite;
   position: relative;
   z-index: 4;
 }
   
-@keyframes autoRun {
-  from {
-    transform: perspective(1000px) rotateX(-16deg) rotateY(0deg) scale(0.4);
-  }
-  to {
-    transform: perspective(1000px) rotateX(-16deg) rotateY(360deg) scale(0.4);
-  }
+@keyframes autoRun{
+    from{
+        transform: perspective(1000px) rotateX(-16deg) rotateY(0deg);
+    }to{
+        transform: perspective(1000px) rotateX(-16deg) rotateY(360deg);
+    }
 }
 
 .banner .slider .item{
