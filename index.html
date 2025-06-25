@@ -433,24 +433,32 @@ function toggleServizio(element) {
 
 
 
-function openGallery(imgSrc) {
-  const modal = document.getElementById('galleryModal');
-  const modalImg = document.getElementById('modalImg');
-  modalImg.src = imgSrc;
-  modalImg.classList.remove('zoomed');
-  modal.classList.add('show');
-}
-
-function closeGallery(e) {
-  if (e.target.classList.contains('modal-overlay') || e.target.classList.contains('close')) {
-    document.getElementById('galleryModal').classList.remove('show');
+  // Funzione per aprire il popup con immagine
+  function openGallery(imgSrc) {
+    const modal = document.getElementById('galleryModal');
+    const modalImg = document.getElementById('modalImg');
+    modalImg.src = imgSrc;
+    modalImg.classList.remove('zoomed');
+    modal.classList.add('show');
   }
-}
 
-document.getElementById('modalImg').addEventListener('click', function () {
-  this.classList.toggle('zoomed');
-});
+  // Funzione per chiudere il popup cliccando fuori o sulla X
+  function closeGallery(e) {
+    if (e.target.classList.contains('modal-overlay') || e.target.classList.contains('close')) {
+      document.getElementById('galleryModal').classList.remove('show');
+    }
+  }
 
+  // Gestione zoom con click su desktop
+  document.addEventListener('DOMContentLoaded', () => {
+    const modalImg = document.getElementById('modalImg');
+
+    modalImg.addEventListener('click', () => {
+      if (window.innerWidth > 768) {  // Attiva solo su desktop
+        modalImg.classList.toggle('zoomed');
+      }
+    });
+  });
 
 
 
