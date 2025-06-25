@@ -589,16 +589,13 @@ nav a { /* stile per i link nella barra di navigazione */
  
 
 .banner .slider {
-  position: absolute;
   width: 200px;
   height: 250px;
-  top: 10%;
-  left: 50%;
-  transform: translateX(-50%) perspective(1000px);
   transform-style: preserve-3d;
+  transform: perspective(1000px) rotateX(-16deg) rotateY(0deg) scale(0.55);
   animation: autoRun 20s linear infinite;
+  position: relative;
   z-index: 4;
-  scale: 0.55; /* Applichiamo lo scale qui, non al contenitore */
 }
   
 @keyframes autoRun{
