@@ -579,7 +579,7 @@ nav a { /* stile per i link nella barra di navigazione */
 #imieilavori h2 {
   color: white;
   text-align: center;
-  margin-bottom: 0px;
+  margin-bottom: 0px; /* o quanto basta */
 }
 
 .banner {
@@ -590,10 +590,11 @@ nav a { /* stile per i link nella barra di navigazione */
   align-items: center;
   overflow: hidden;
   position: relative;
-  transform: scale(0.7);
+  transform: scale(0.7); /* ← scala tutto, proporzioni incluse */
   transform-origin: center;
-  margin-top: -20px;
+   margin-top: -50px;
 }
+ 
 
 .banner .slider {
   width: 200px;
@@ -602,9 +603,9 @@ nav a { /* stile per i link nella barra di navigazione */
   transform: perspective(1000px) rotateX(-22deg) rotateY(0deg) scale(0.55);
   animation: autoRun 20s linear infinite;
   position: relative;
-  z-index: 2;
+  z-index: 4;
 }
-
+  
 @keyframes autoRun {
   from {
     transform: perspective(1000px) rotateX(-22deg) rotateY(0deg);
