@@ -570,16 +570,21 @@ nav a { /* stile per i link nella barra di navigazione */
 
 /* css i miei lavori */
 #imieilavori {
-  padding-top: 40px;
-  padding-bottom: 40px;
+  padding-top: 20px;
+  padding-bottom: 0px;
   position: relative;
   z-index: 1;
 }
 
+#imieilavori h2 {
+  color: white;
+  text-align: center;
+  margin-bottom: 10px; /* o quanto basta */
+}
 
 .banner {
   width: 100%;
-  height: 130vh;
+  height: 150vh;
   display: flex;
   justify-content: center;
   align-items: center;
