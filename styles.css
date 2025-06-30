@@ -592,7 +592,9 @@ nav a { /* stile per i link nella barra di navigazione */
   position: relative;
   transform: scale(0.7); /* ← scala tutto, proporzioni incluse */
   transform-origin: center;
-   margin-top: 0px;
+  margin-top: 0px;
+  margin-bottom: 0;
+  padding-bottom: 0;
 }
  
 
@@ -667,6 +669,11 @@ box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Ombra leggera */
 
 
 /* css contatti */
+#contatti {
+  margin-top: 0;
+  padding-top: 20px;
+
+
 /* Font coerente */
 .container, label, select, input, textarea, button, p {
   font-family: 'LEMON MILK', sans-serif; /* puoi cambiare con il font che usi nel titolo */
@@ -682,7 +689,6 @@ form {
   max-width: 500px;
   margin: 0 auto;
   background-color: white;
-   margin-top: 100px;
 }
 
 /* Paragrafo con font Bahnschrift */
