@@ -723,6 +723,12 @@ nav a { /* stile per i link nella barra di navigazione */
 
 
 /* css mappa */
+
+#dovesono {
+  margin-top: 20px;
+}
+
+
 #dovesono h2 {
   color: rgb(0, 0, 0);
   text-align: center;
