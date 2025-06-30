@@ -646,6 +646,61 @@ nav a { /* stile per i link nella barra di navigazione */
     z-index: 3;
 }    
 
+
+
+
+
+
+
+@media (max-width: 768px) {
+  .banner {
+    height: auto;
+    transform: scale(1);
+    margin-top: 20px;
+    overflow: visible;
+  }
+
+  .banner .slider {
+    width: 100%;
+    height: 230px;
+    transform: perspective(800px) rotateX(0deg) rotateY(0deg) scale(1);
+    animation: none; /* ferma rotazione automatica su schermi piccoli */
+    display: flex;
+    gap: 10px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .banner .slider .item {
+    position: relative;
+    min-width: 180px;
+    flex: 0 0 auto;
+    transform: none !important;
+    scroll-snap-align: start;
+  }
+
+  .banner .slider .item img {
+    object-fit: cover;
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+
+  .banner .model {
+    background-size: contain;
+    height: 200px;
+  }
+
+  #imieilavori h2 {
+    font-size: 22px;
+    margin-bottom: 10px;
+  }
+}
+
+
+
+
 /* css i miei lavori */
 
 
