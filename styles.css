@@ -206,18 +206,17 @@ background-color: rgba(170, 78, 177, 0.7); /* riquadro viola */
 
 @media (max-width: 768px) {
   .hero {
-    min-height: 100vh;
-    height: auto;
-    background-image: url('jpg/sfondo superiore.jpg');
+     background-image: url('jpg/sfondo mobile.jpg');
     background-size: cover;
     background-position: center top;
     background-repeat: no-repeat;
+    min-height: 100vh;
+    height: auto;
+    padding: 40px 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    position: relative;
-    padding: 40px 20px;
-    z-index: 0;
+    align-items: center;
   }
 
   .hero-content {
