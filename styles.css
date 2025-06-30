@@ -579,7 +579,8 @@ nav a { /* stile per i link nella barra di navigazione */
 #imieilavori h2 {
   color: white;
   text-align: center;
-  margin-bottom: -40px; /* o quanto basta */
+  margin-bottom: -160px; 
+   position: relative;
 }
 
 .banner {
