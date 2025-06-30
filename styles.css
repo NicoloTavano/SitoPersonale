@@ -723,6 +723,13 @@ nav a { /* stile per i link nella barra di navigazione */
 
 
 /* css mappa */
+#dovesono h2 {
+  color: rgb(0, 0, 0);
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+
 iframe {
 border-radius: 10px; /* Bordo arrotondato */
 box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Ombra leggera */
