@@ -695,7 +695,7 @@ nav a { /* stile per i link nella barra di navigazione */
     background-size: contain;
     background-position: center bottom;
     background-repeat: no-repeat;
-    transform: translateY(180px);
+    transform: translateY(380px);
   }
 
   #contatti {
