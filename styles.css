@@ -652,38 +652,51 @@ nav a { /* stile per i link nella barra di navigazione */
 
 
 @media (max-width: 768px) {
-  .banner {
-    height: 80vh;
-    transform: scale(0.38);
-    transform-origin: top center;
-    margin-top: -40px;
-    overflow: visible;
-     padding-bottom: 0;
-  }
-
-  .banner .slider {
-    width: 200px;
-    height: 240px;
-    transform: perspective(900px) rotateX(-22deg) rotateY(0deg) scale(0.5);
-    animation: autoRun 20s linear infinite;
-  }
-
-  .banner .slider .item {
-    transform:
-      rotateY(calc((var(--position) - 1) * (360 / var(--quantity)) * 1deg))
-      translateZ(450px); /* ridotto per tenere le carte più vicine */
-  }
-
-  .banner .model {
-    height: 300px;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center bottom;
+  #imieilavori {
+    padding-top: 40px;
   }
 
   #imieilavori h2 {
     font-size: 22px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
+    position: relative;
+    z-index: 2;
+  }
+
+  .banner {
+    transform: scale(0.4);
+    transform-origin: top center;
+    height: auto;
+    margin-top: 0;
+    padding-top: 20px;
+    padding-bottom: 180px; /* spazio per l'immagine centrale */
+    overflow: visible;
+    position: relative;
+    z-index: 1;
+  }
+
+  .banner .slider {
+    width: 200px;
+    height: 220px;
+    transform: perspective(800px) rotateX(-22deg) rotateY(0deg) scale(0.5);
+    animation: autoRun 20s linear infinite;
+  }
+
+  .banner .slider .item {
+    transform: rotateY(calc((var(--position) - 1) * (360 / var(--quantity)) * 1deg))
+               translateZ(480px);
+  }
+
+  .banner .model {
+    height: 360px;
+    background-size: contain;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+  }
+
+  #contatti {
+    margin-top: -60px; /* avvicina la sezione contatti */
+    padding-top: 10px;
   }
 }
 
