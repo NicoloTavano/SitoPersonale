@@ -658,6 +658,7 @@ nav a { /* stile per i link nella barra di navigazione */
     transform-origin: top center;
     margin-top: -40px;
     overflow: visible;
+     padding-bottom: 240px
   }
 
   .banner .slider {
@@ -674,7 +675,7 @@ nav a { /* stile per i link nella barra di navigazione */
   }
 
   .banner .model {
-    height: 340px;
+    height: 420px;
     background-size: contain;
     background-position: center bottom;
   }
