@@ -691,11 +691,11 @@ nav a { /* stile per i link nella barra di navigazione */
   }
 
   .banner .model {
-    height: 660px;
+    height: 760px;
     background-size: contain;
     background-position: center bottom;
     background-repeat: no-repeat;
-    transform: translateY(380px);
+    transform: translateY(450px);
   }
 
   #contatti {
