@@ -195,6 +195,70 @@ background-color: rgba(170, 78, 177, 0.7); /* riquadro viola */
     object-fit: contain;
     object-position: bottom right;
 }
+
+
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    position: static;
+    height: auto;
+    padding-top: 100px;
+    margin-top: 0;
+    background-position: center top;
+    z-index: 0;
+  }
+
+  .hero-content {
+    padding: 20px;
+    margin-left: 0;
+    text-align: center;
+    align-items: center;
+  }
+
+  .hero-content h2 {
+    font-size: 2rem;
+  }
+
+  .hero-content p {
+    font-size: 1rem;
+    max-width: 90%;
+  }
+
+  .hero-image {
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+  }
+
+  .hero-image img {
+    height: auto;
+    width: 70%;
+    max-width: 300px;
+    object-position: center bottom;
+  }
+
+  .shape-divider {
+    margin-top: 0;
+  }
+}
+
+
+
+
+
+
+
+
+
 /* css hero */
 
 
