@@ -671,8 +671,8 @@ nav a { /* stile per i link nella barra di navigazione */
     transform-origin: top center;
     height: auto;
     margin-top: 0;
-    padding-top: 00px;
-    padding-bottom: 0px; /* spazio per l'immagine centrale */
+    padding-top: 20px;
+    padding-bottom: 80px; /* spazio per l'immagine centrale */
     overflow: visible;
     position: relative;
     z-index: 1;
