@@ -695,8 +695,8 @@ nav a { /* stile per i link nella barra di navigazione */
     background-size: contain;
     background-position: center bottom;
     background-repeat: no-repeat;
-    margin-top: -40px;
-    padding-top: -40px;
+    margin-top: -140px;
+    padding-top: -140px;
   }
 
   #contatti {
