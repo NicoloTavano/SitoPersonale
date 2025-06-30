@@ -590,7 +590,7 @@ nav a { /* stile per i link nella barra di navigazione */
   align-items: center;
   overflow: visible;
   position: relative;
-  transform: scale(0.8); /* ← scala tutto, proporzioni incluse */
+  transform: scale(0.7); /* ← scala tutto, proporzioni incluse */
   transform-origin: center;
    margin-top: 0px;
 }
