@@ -208,7 +208,7 @@ background-color: rgba(170, 78, 177, 0.7); /* riquadro viola */
   .hero {
      background-image: url('jpg/sfondo mobile.jpg');
     background-size: cover;
-    background-position: center top;
+    background-position: top center;
     background-repeat: no-repeat;
     min-height: 100vh;
     height: auto;
