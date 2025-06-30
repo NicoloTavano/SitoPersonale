@@ -653,7 +653,7 @@ nav a { /* stile per i link nella barra di navigazione */
 
 @media (max-width: 768px) {
   .banner {
-    height: auto;
+    height: 40vh;
     transform: scale(0.38);
     transform-origin: top center;
     margin-top: -40px;
