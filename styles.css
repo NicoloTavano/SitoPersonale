@@ -653,32 +653,36 @@ nav a { /* stile per i link nella barra di navigazione */
 
 @media (max-width: 768px) {
   .banner {
-    height: 95vh;
-    transform: scale(0.45); /* riduce TUTTO, inclusi slider e model */
+    height: 100vh;
+    transform: scale(0.38);
     transform-origin: top center;
-    overflow: visible;
     margin-top: -40px;
+    overflow: visible;
   }
 
   .banner .slider {
-    width: 160px;
-    height: 180px;
-    transform: perspective(800px) rotateX(-22deg) rotateY(0deg) scale(0.45);
+    width: 200px;
+    height: 240px;
+    transform: perspective(900px) rotateX(-22deg) rotateY(0deg) scale(0.5);
+    animation: autoRun 20s linear infinite;
+  }
+
+  .banner .slider .item {
+    transform:
+      rotateY(calc((var(--position) - 1) * (360 / var(--quantity)) * 1deg))
+      translateZ(450px); /* ridotto per tenere le carte più vicine */
   }
 
   .banner .model {
-    height: 220px; /* più grande rispetto a prima */
+    height: 280px;
     background-size: contain;
     background-position: center bottom;
   }
 
   #imieilavori h2 {
-    font-size: 20px;
+    font-size: 22px;
     margin-bottom: 10px;
   }
-
-html, body {
-  overflow-x: hidden;
 }
 
   
