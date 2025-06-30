@@ -676,6 +676,12 @@ nav a { /* stile per i link nella barra di navigazione */
     font-size: 20px;
     margin-bottom: 10px;
   }
+
+html, body {
+  overflow-x: hidden;
+}
+
+  
 }
 
 
