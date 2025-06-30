@@ -736,6 +736,11 @@ box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Ombra leggera */
   padding-top: 20px;
 }
 
+#contatti h2 {
+  color: white;
+  text-align: center;
+}
+
 #contatti .container {
   margin-top: 0;
   padding-top: 0;
