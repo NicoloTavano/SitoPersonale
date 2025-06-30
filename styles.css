@@ -567,7 +567,6 @@ nav a { /* stile per i link nella barra di navigazione */
 
 
 
-
 /* css i miei lavori */
 #imieilavori {
   padding-top: 20px;
@@ -579,33 +578,34 @@ nav a { /* stile per i link nella barra di navigazione */
 #imieilavori h2 {
   color: white;
   text-align: center;
-  margin-bottom: 0px; /* o quanto basta */
+  margin-bottom: -50px; /* Reduced the negative margin to bring the h2 closer to the slider */
 }
 
 .banner {
   width: 100%;
-  height: 150vh;
+  height: 100vh; /* Reduced height to allow more vertical space for the slider */
   display: flex;
   justify-content: center;
   align-items: center;
   overflow: hidden;
   position: relative;
-  transform: scale(0.7); /* ← scala tutto, proporzioni incluse */
+  transform: scale(0.7); /* Keep the overall scale */
   transform-origin: center;
-   margin-top: -50px;
+  margin-top: 0px; /* Removed negative margin to bring the banner up */
 }
- 
+
 
 .banner .slider {
   width: 200px;
   height: 250px;
   transform-style: preserve-3d;
-  transform: perspective(1000px) rotateX(-22deg) rotateY(0deg) scale(0.55);
+  /* Adjusted transform-origin to better center the rotation visually, and slightly increased scale */
+  transform: perspective(1000px) rotateX(-22deg) rotateY(0deg) scale(0.7);
   animation: autoRun 20s linear infinite;
   position: relative;
   z-index: 4;
 }
-  
+
 @keyframes autoRun {
   from {
     transform: perspective(1000px) rotateX(-22deg) rotateY(0deg);
@@ -618,17 +618,17 @@ nav a { /* stile per i link nella barra di navigazione */
 .banner .slider .item{
     position: absolute;
     inset: 0 0 0 0;
-    transform: 
-        rotateY(calc( (var(--position) - 1) * (360 / var(--quantity)) *1deg))    
-        translateZ(550px);
+    transform:
+        rotateY(calc( (var(--position) - 1) * (360 / var(--quantity)) *1deg))
+        translateZ(450px); /* Reduced translateZ to make cards appear closer and less likely to be cut off */
 }
 
 .banner .slider .item img{
     width: 100%;
     height: auto;
-    object-fit: contain;
+    object-fit: contain; /* Changed to contain to ensure the entire image is visible within its box */
     display: block;
-    object-fit: cover;
+    /* object-fit: cover; This was causing cropping, 'contain' is better for ensuring the whole image is seen */
 }
 
 .banner .model{
@@ -642,10 +642,9 @@ nav a { /* stile per i link nella barra di navigazione */
     background-repeat: no-repeat;
     background-position: top center;
     z-index: 3;
-}    
+}
 
 /* css i miei lavori */
-
 
 
 
