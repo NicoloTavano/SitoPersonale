@@ -593,6 +593,8 @@ nav a { /* stile per i link nella barra di navigazione */
   transform: scale(0.6); /* ← scala tutto, proporzioni incluse */
   transform-origin: center;
    margin-top: 0px;
+     margin-bottom: 0;
+  padding-bottom: 0;
 }
  
 
