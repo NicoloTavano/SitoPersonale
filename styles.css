@@ -691,7 +691,7 @@ nav a { /* stile per i link nella barra di navigazione */
   }
 
   .banner .model {
-    height: 360px;
+    height: 320px;
     background-size: contain;
     background-position: center bottom;
     background-repeat: no-repeat;
