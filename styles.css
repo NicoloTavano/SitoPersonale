@@ -651,52 +651,33 @@ nav a { /* stile per i link nella barra di navigazione */
 
 
 
-
 @media (max-width: 768px) {
   .banner {
-    height: auto;
-    transform: scale(1);
-    margin-top: 20px;
+    height: 90vh;
+    transform: scale(0.55); /* o anche 0.5 se serve ridurlo di più */
+    transform-origin: center;
+    margin-top: -30px; /* puoi regolarlo per migliorare la posizione */
     overflow: visible;
   }
 
   .banner .slider {
-    width: 100%;
-    height: 230px;
-    transform: perspective(800px) rotateX(0deg) rotateY(0deg) scale(1);
-    animation: none; /* ferma rotazione automatica su schermi piccoli */
-    display: flex;
-    gap: 10px;
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
-    -webkit-overflow-scrolling: touch;
-  }
-
-  .banner .slider .item {
-    position: relative;
-    min-width: 180px;
-    flex: 0 0 auto;
-    transform: none !important;
-    scroll-snap-align: start;
-  }
-
-  .banner .slider .item img {
-    object-fit: cover;
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
+    width: 180px;
+    height: 220px;
+    transform: perspective(800px) rotateX(-22deg) rotateY(0deg) scale(0.5);
+    animation: autoRun 18s linear infinite;
   }
 
   .banner .model {
+    height: 150px;
     background-size: contain;
-    height: 200px;
   }
 
   #imieilavori h2 {
-    font-size: 22px;
-    margin-bottom: 10px;
+    font-size: 20px;
+    margin-bottom: 5px;
   }
 }
+
 
 
 
