@@ -590,17 +590,15 @@ nav a { /* stile per i link nella barra di navigazione */
   align-items: center;
   overflow: visible;
   position: relative;
-  transform: scale(0.7); /* ← scala tutto, proporzioni incluse */
+  transform: scale(0.8); /* ← scala tutto, proporzioni incluse */
   transform-origin: center;
-  margin-top: 0px;
-  margin-bottom: 0;
-  padding-bottom: 0;
+   margin-top: 0px;
 }
  
 
 .banner .slider {
   width: 200px;
-  height: 300px;
+  height: 250px;
   transform-style: preserve-3d;
   transform: perspective(1000px) rotateX(-22deg) rotateY(0deg) scale(0.55);
   animation: autoRun 20s linear infinite;
@@ -669,11 +667,6 @@ box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Ombra leggera */
 
 
 /* css contatti */
-#contatti {
-  margin-top: 0;
-  padding-top: 20px;
-
-
 /* Font coerente */
 .container, label, select, input, textarea, button, p {
   font-family: 'LEMON MILK', sans-serif; /* puoi cambiare con il font che usi nel titolo */
