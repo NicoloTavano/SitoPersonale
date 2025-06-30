@@ -594,7 +594,7 @@ nav a { /* stile per i link nella barra di navigazione */
   transform-origin: center;
    margin-top: 0px;
      margin-bottom: 0;
-  padding-bottom: 0;
+  padding-bottom: 150px;
 }
  
 
