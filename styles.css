@@ -664,7 +664,7 @@ nav a { /* stile per i link nella barra di navigazione */
   }
 
   .banner {
-    transform: scale(0.3);
+    transform: scale(0.38);
     transform-origin: top center;
     height: auto;
     margin-top: 0;
