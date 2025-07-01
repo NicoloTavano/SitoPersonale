@@ -205,14 +205,18 @@ background-color: rgba(170, 78, 177, 0.7); /* riquadro viola */
 
 
 @media (max-width: 768px) {
-  html, body {
+html, body {
+  overflow-x: hidden;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+ .hero {
+    position: relative;
+    width: 100vw; /* forza la larghezza esatta dello schermo */
+    max-width: 100%;
     overflow-x: hidden;
-    margin: 0;
-    padding: 0;
-  }
 
-  .hero {
-    position: relative; /* molto importante: toglie il fixed */
     background-image: url('jpg/sfondo%20mobile.jpg');
     background-size: cover;
     background-repeat: no-repeat;
@@ -224,35 +228,15 @@ background-color: rgba(170, 78, 177, 0.7); /* riquadro viola */
     justify-content: center;
     align-items: center;
 
-    margin-top: 70px; /* spinge l'intera hero sotto la header fissa */
+    margin-top: 80px;
     padding: 40px 20px;
-    width: 100%;
-    height: auto;
-  }
-
-  .hero-image {
-    display: none; /* nasconde immagine personale su mobile */
   }
 
   .hero-content {
-    margin: 0;
     padding: 0;
+    margin: 0 auto;
+    max-width: 100%;
     text-align: center;
-    color: black;
-  }
-
-  .hero-content h2 {
-    font-size: 2rem;
-    margin-bottom: 10px;
-  }
-
-  .hero-content p {
-    font-size: 1.1rem;
-    margin: 0;
-  }
-
-  .shape-divider {
-    margin-top: 0 !important;
   }
 }
 
