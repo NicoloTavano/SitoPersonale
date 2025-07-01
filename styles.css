@@ -204,45 +204,38 @@ background-color: rgba(170, 78, 177, 0.7); /* riquadro viola */
 
 
 
-@media screen and (max-width: 768px) {
+@media (max-width: 768px) {
   html, body {
     overflow-x: hidden;
-    width: 100%;
+    margin: 0;
+    padding: 0;
   }
-
-  * {
-    max-width: 100vw;
-    box-sizing: border-box;
-  }
-
 
   .hero {
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-end; /* posiziona il testo in basso */
-    height: 100vh;
-    width: 100%;
-    background-image: url('jpg/sfondo mobile.jpg'); /* tua immagine mobile */
+    background-image: url('jpg/sfondo-mobile.jpg');
     background-size: cover;
-    background-position: top center;
     background-repeat: no-repeat;
-    padding: 0 20px;
+    background-position: top center;
+    background-attachment: fixed; /* Fissa l'immagine */
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
     position: relative;
   }
 
-  .hero::before {
-    content: '';
-    position: absolute;
-    inset: 0;
-    background: rgba(0, 0, 0, 0.5); /* sfondo scuro per migliorare leggibilità testo */
-    z-index: 1;
+  .hero-image {
+    display: none;
   }
 
   .hero-content {
-    position: relative;
-    z-index: 2;
+    margin: 0;
+    padding: 20px;
     text-align: center;
-    padding: 30px 20px;
+    color: white;
   }
 
   .hero-content h2 {
@@ -251,20 +244,14 @@ background-color: rgba(170, 78, 177, 0.7); /* riquadro viola */
   }
 
   .hero-content p {
-    font-size: 1rem;
+    font-size: 1.1rem;
     color: white;
-    max-width: 100%;
-  }
-
-  .hero-image {
-    display: none; /* nasconde l'immagine "io.png" */
   }
 
   .shape-divider {
     margin-top: 0;
   }
 }
-
 
 
 
