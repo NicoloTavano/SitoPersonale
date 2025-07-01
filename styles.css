@@ -212,18 +212,22 @@ background-color: rgba(170, 78, 177, 0.7); /* riquadro viola */
   }
 
   .hero {
-    background-image: url('jpg/sfondo%20mobile.jpg'); /* occhio agli spazi */
-    background-size: contain;
+    background-image: url('jpg/sfondo%20mobile.jpg');
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: top center;
     background-attachment: scroll;
-    height: 100vh;
+
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 0;
+
+    padding-top: 80px; /* spazio per la header */
+    padding-bottom: 40px; /* rimuove lo spazio eccessivo sotto */
     margin: 0;
+    width: 100%;
+    height: auto;
     position: relative;
   }
 
@@ -233,17 +237,23 @@ background-color: rgba(170, 78, 177, 0.7); /* riquadro viola */
 
   .hero-content {
     margin: 0;
-    padding: 20px;
+    padding: 0 20px;
     text-align: center;
     color: black;
   }
 
   .hero-content h2 {
     font-size: 2rem;
+    margin-bottom: 10px;
   }
 
   .hero-content p {
     font-size: 1.1rem;
+    margin: 0;
+  }
+
+  .shape-divider {
+    margin-top: 0 !important; /* elimina spazio extra sotto la hero */
   }
 }
 
