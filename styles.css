@@ -208,19 +208,30 @@ background-color: rgba(170, 78, 177, 0.7); /* riquadro viola */
   .hero {
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-end; /* posiziona il testo in basso */
     height: 100vh;
-    background-image: url('jpg/sfondo mobile.jpg'); /* <-- tua immagine verticale */
-    background-position: center;
+    width: 100%;
+    background-image: url('jpg/sfondo-mobile.jpg'); /* tua immagine mobile */
     background-size: cover;
+    background-position: top center;
     background-repeat: no-repeat;
     padding: 0 20px;
+    position: relative;
+  }
+
+  .hero::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5); /* sfondo scuro per migliorare leggibilità testo */
+    z-index: 1;
   }
 
   .hero-content {
-    margin-left: 0;
-    padding: 20px;
+    position: relative;
+    z-index: 2;
     text-align: center;
+    padding: 30px 20px;
   }
 
   .hero-content h2 {
@@ -231,17 +242,17 @@ background-color: rgba(170, 78, 177, 0.7); /* riquadro viola */
   .hero-content p {
     font-size: 1rem;
     color: white;
+    max-width: 100%;
   }
 
   .hero-image {
-    display: none; /* <-- nasconde immagine "io.png" */
+    display: none; /* nasconde l'immagine "io.png" */
   }
 
   .shape-divider {
-    margin-top: 100vh; /* mantiene separazione con sezione successiva */
+    margin-top: 0;
   }
 }
-
 
 
 
