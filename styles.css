@@ -212,11 +212,11 @@ background-color: rgba(170, 78, 177, 0.7); /* riquadro viola */
   }
 
   .hero {
-    background-image: url('jpg/sfondo-mobile.jpg');
-    background-size: cover;
+    background-image: url('jpg/sfondo%20mobile.jpg'); /* occhio agli spazi */
+    background-size: contain;
     background-repeat: no-repeat;
     background-position: top center;
-    background-attachment: fixed; /* Fissa l'immagine */
+    background-attachment: scroll;
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -235,21 +235,15 @@ background-color: rgba(170, 78, 177, 0.7); /* riquadro viola */
     margin: 0;
     padding: 20px;
     text-align: center;
-    color: white;
+    color: black;
   }
 
   .hero-content h2 {
     font-size: 2rem;
-    color: white;
   }
 
   .hero-content p {
     font-size: 1.1rem;
-    color: white;
-  }
-
-  .shape-divider {
-    margin-top: 0;
   }
 }
 
