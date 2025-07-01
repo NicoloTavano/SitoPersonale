@@ -211,6 +211,9 @@ background-color: rgba(170, 78, 177, 0.7); /* riquadro viola */
     padding: 0;
   }
 
+  * {
+  box-sizing: border-box;
+  }
   .hero {
     position: relative; /* molto importante: toglie il fixed */
     background-image: url('jpg/sfondo%20mobile.jpg');
