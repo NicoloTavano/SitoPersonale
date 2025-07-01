@@ -223,6 +223,7 @@ background-color: rgba(170, 78, 177, 0.7); /* riquadro viola */
     justify-content: center;
     align-items: center;
 
+    margin-top: 80px;
     padding-top: 80px; /* spazio per la header */
     padding-bottom: 40px; /* rimuove lo spazio eccessivo sotto */
     margin: 0;
