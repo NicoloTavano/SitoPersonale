@@ -569,35 +569,25 @@ h3, h4 {
 /* css servizi */
 
 
-
-
-
-
-
-
 /* css barra di navigazione */
-nav { /* stile per la barra di navigazione */
-    background: rgba(0, 0, 0, 0.0);
-    padding: 20px;
-    text-align: center;
+nav {
+  background: transparent;
+  padding: 20px;
+  text-align: center;
 }
 
-nav a { /* stile per i link nella barra di navigazione */
-    color: white;
-    text-decoration: none;
-    margin: 0 15px;
-    font-size: 18px;
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  font-size: 18px;
 }
 /* css barra di navigazione */
-
-
-
 
 
 /* css i miei lavori */
 #imieilavori {
   padding-top: 20px;
-  padding-bottom: 0px;
   position: relative;
   z-index: 1;
 }
@@ -605,8 +595,8 @@ nav a { /* stile per i link nella barra di navigazione */
 #imieilavori h2 {
   color: white;
   text-align: center;
-  margin-bottom: -160px; 
-   position: relative;
+  margin-bottom: -160px;
+  position: relative;
 }
 
 .banner {
@@ -617,13 +607,10 @@ nav a { /* stile per i link nella barra di navigazione */
   align-items: center;
   overflow: visible;
   position: relative;
-  transform: scale(0.6); /* ← scala tutto, proporzioni incluse */
+  transform: scale(0.6);
   transform-origin: center;
-   margin-top: 0px;
-     margin-bottom: 0;
   padding-bottom: 150px;
 }
- 
 
 .banner .slider {
   width: 200px;
@@ -634,7 +621,7 @@ nav a { /* stile per i link nella barra di navigazione */
   position: relative;
   z-index: 4;
 }
-  
+
 @keyframes autoRun {
   from {
     transform: perspective(1000px) rotateX(-22deg) rotateY(0deg);
@@ -644,51 +631,41 @@ nav a { /* stile per i link nella barra di navigazione */
   }
 }
 
-.banner .slider .item{
-    position: absolute;
-    inset: 0 0 0 0;
-    transform: 
-        rotateY(calc( (var(--position) - 1) * (360 / var(--quantity)) *1deg))    
-        translateZ(550px);
+.banner .slider .item {
+  position: absolute;
+  inset: 0;
+  transform: rotateY(calc((var(--position) - 1) * (360 / var(--quantity)) * 1deg))
+             translateZ(550px);
 }
 
-.banner .slider .item img{
-    width: 100%;
-    height: auto;
-    object-fit: contain;
-    display: block;
-    object-fit: cover;
+.banner .slider .item img {
+  width: 100%;
+  object-fit: cover;
+  display: block;
 }
 
-.banner .model{
-    background-image: url(jpg/io\ vett.png);
-    width: 100%;
-    height: 75vh;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    background-size: auto 100%;
-    background-repeat: no-repeat;
-    background-position: top center;
-    z-index: 3;
-}    
-
-
-
-
-
+.banner .model {
+  background-image: url('jpg/io vett.png');
+  width: 100%;
+  height: 75vh;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  background-position: top center;
+  z-index: 3;
+}
 
 @media (max-width: 768px) {
   #imieilavori {
     padding-top: 40px;
-     margin-bottom: -60px;
-     padding-bottom: -60px;
+    margin-bottom: -60px;
   }
 
   #imieilavori h2 {
     font-size: 22px;
     margin-bottom: 80px;
-    position: relative;
     z-index: 2;
   }
 
@@ -696,11 +673,7 @@ nav a { /* stile per i link nella barra di navigazione */
     transform: scale(0.35);
     transform-origin: top center;
     height: auto;
-    margin-top: 0;
-    padding-top: 10px;
-    padding-bottom: 100px; /* spazio per l'immagine centrale */
-    overflow: visible;
-    position: relative;
+    padding: 10px 0 100px;
     z-index: 1;
   }
 
@@ -708,7 +681,6 @@ nav a { /* stile per i link nella barra di navigazione */
     width: 200px;
     height: 220px;
     transform: perspective(800px) rotateX(-22deg) rotateY(0deg) scale(0.5);
-    animation: autoRun 20s linear infinite;
   }
 
   .banner .slider .item {
@@ -717,57 +689,32 @@ nav a { /* stile per i link nella barra di navigazione */
   }
 
   .banner .model {
-    transform: scale(1.3);
+    transform: translateY(380px) scale(1.3);
     background-size: contain;
     background-position: center bottom;
-    background-repeat: no-repeat;
-    transform: translateY(380px);
   }
 
   #contatti {
-    margin-top: -120px; /* avvicina la sezione contatti */
-    padding-top: -120px;
+    margin-top: -120px;
   }
 }
-
-  
-
-
-
-
-
-
 /* css i miei lavori */
 
 
-
-
-
-
-
-
-
-
-
-
-
 /* css mappa */
-
 #dovesono {
   margin-top: 10px;
 }
 
-
 #dovesono h2 {
-  color: rgb(0, 0, 0);
+  color: #000;
   text-align: center;
   margin-bottom: 20px;
 }
 
-
 iframe {
-border-radius: 10px; /* Bordo arrotondato */
-box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Ombra leggera */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 /* css mappa */
 
@@ -779,7 +726,7 @@ box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Ombra leggera */
 }
 
 #contatti h2 {
-  color: rgb(0, 0, 0);
+  color: #000;
   text-align: center;
   margin-bottom: 20px;
 }
@@ -788,15 +735,22 @@ box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Ombra leggera */
   margin-top: 0;
   padding-top: 0;
 }
-/* Font coerente */
+
 .container, label, select, input, textarea, button, p {
-  font-family: 'LEMON MILK', sans-serif; /* puoi cambiare con il font che usi nel titolo */
+  font-family: 'LEMON MILK', sans-serif;
 }
-/* Contenitore */
+
+.container p {
+  text-align: center;
+  font-size: 20px;
+  font-family: 'Bahnschrift', sans-serif;
+  margin-bottom: 20px;
+}
+
 form {
   display: flex;
   flex-direction: column;
-  gap: 20px; /* aumenta lo spazio verticale */
+  gap: 20px;
   border-radius: 10px;
   padding: 30px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
@@ -805,26 +759,16 @@ form {
   background-color: white;
 }
 
-/* Paragrafo con font Bahnschrift */
-.container p {
-  text-align: center;
-  font-size: 20px;
-  font-family: 'Bahnschrift', sans-serif;
-  margin-bottom: 20px;
-}
-
-/* Etichette centralizzate e senza spazi extra */
 label {
   font-weight: bold;
   color: #000;
   font-size: 15px;
   text-align: center;
+  line-height: 1.4;
   margin: 0;
   padding: 0;
-  line-height: 1.4;
 }
 
-/* Campi input, textarea e select */
 input, textarea, select {
   width: 100%;
   padding: 14px;
@@ -835,21 +779,18 @@ input, textarea, select {
   box-sizing: border-box;
 }
 
-/* SELECT con stile viola e font Bahnschrift */
 select {
   background-color: #f3e6f8;
   font-family: 'Bahnschrift', sans-serif;
   color: #000;
 }
 
-/* Focus */
 input:focus, textarea:focus, select:focus {
   border-color: rgba(170, 78, 177, 0.7);
   outline: none;
   box-shadow: 0 0 8px rgba(170, 78, 177, 0.5);
 }
 
-/* Checkbox su una riga con font Bahnschrift */
 .checkbox {
   display: flex;
   align-items: flex-start;
@@ -861,20 +802,17 @@ input:focus, textarea:focus, select:focus {
 }
 
 .checkbox input[type="checkbox"] {
-  flex-shrink: 0; /* il checkbox non si ridimensiona */
-  margin-top: 2px; /* allineamento verticale */
+  flex-shrink: 0;
+  margin-top: 2px;
 }
 
 .checkbox label {
   flex-grow: 1;
   text-align: left;
-  margin: 0;
-  padding: 0;
   line-height: 1.4;
-  word-break: break-word; /* spezza in caso di overflow */
+  word-break: break-word;
 }
 
-/* Pulsante */
 button {
   background: rgba(170, 78, 177, 0.7);
   color: white;
@@ -893,7 +831,6 @@ button:hover {
   background: rgba(106, 28, 111, 0.7);
 }
 
-/* Etichette form-group spaziatura */
 .form-group {
   display: flex;
   flex-direction: column;
@@ -906,18 +843,7 @@ button:hover {
     flex-direction: column;
     align-items: flex-start;
   }
-
-  .checkbox label {
-    padding-left: 0;
-  }
 }
-
-
-/* css contatti */
-
-
-
-
 
 /* css bottone contatti */
 .bottone-fluttuante {
@@ -932,7 +858,7 @@ button:hover {
   font-weight: bold;
   text-decoration: none;
   border-radius: 5px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   z-index: 999;
   transition: all 0.3s ease;
   font-family: 'Poppins', sans-serif;
@@ -941,13 +867,11 @@ button:hover {
   gap: 8px;
 }
 
-/* Hover */
 .bottone-fluttuante:hover {
   background-color: rgba(170, 78, 177, 1);
   color: white;
 }
 
-/* Nasconde il testo solo su mobile */
 @media (max-width: 480px) {
   .testo-bottone {
     display: none;
@@ -962,94 +886,76 @@ button:hover {
     font-size: 20px;
   }
 }
-
-
-
 /* css bottone contatti */
 
 
-
-
-
-
-
-
-
-
-
 /* css footer */
-#footer { /* piè di pagina */
-width: 100%;
-background: rgb(0, 0, 0);
-color: white;
-padding: 30px 0px;
-text-align: center;
-margin-top: 20px;
-display: flex;
-flex-direction: column; /* Organizza gli elementi in colonna */
-align-items: center; /* Centra il contenuto */
+#footer {
+  width: 100%;
+  background: #000;
+  color: white;
+  padding: 30px 0;
+  text-align: center;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.2);
 }
 
-.footer-container { /* contenitore piè di pagina */
-display: flex;
-justify-content: center; /* Centra le colonne orizzontalmente */
-align-items: flex-start; /* Allinea in alto */
-flex-wrap: wrap; /* Permette di adattarsi ai dispositivi più piccoli */
-max-width: 1200px;
-width: 100%;
-padding: 0 20px;
-gap: 30px; /* Distanza tra le colonne */
+.footer-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  width: 100%;
+  padding: 0 20px;
+  gap: 30px;
 }
 
-.footer-column { /*  colonne del footer */
-flex: 1; /* Le colonne si adattano automaticamente */
-min-width: 250px; /* larghezza minima */
-text-align: center; /* Centra il testo nelle colonne */
+.footer-column {
+  flex: 1;
+  min-width: 250px;
+  text-align: center;
 }
 
-
-.footer-column h3 { /* titoli delle colonne */
-font-size: 18px;
-margin-bottom: 10px; /* spazio sotto il titolo */
-color: rgba(170, 78, 177, 0.7);
+.footer-column h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: rgba(170, 78, 177, 0.7);
 }
 
-.footer-column p, .footer-column a { /* testo e link nelle colonne */
-color: #ddd;
-text-decoration: none;
-display: block; /* il testo utilizza tutto lo spazio disponibile della propria colonna */
-margin: 5px 0;
-transition: 0.3s;
+.footer-column p,
+.footer-column a {
+  color: #ddd;
+  text-decoration: none;
+  display: block;
+  margin: 5px 0;
+  transition: 0.3s;
 }
 
-.footer-column a:hover { /* effetto mouse sui link */
-color: rgba(170, 78, 177, 0.7);
+.footer-column a:hover {
+  color: rgba(170, 78, 177, 0.7);
 }
 
-.footer-column i { /* stile delle icone */
-margin-right: 8px; /* spazio tra icona e testo */
+.footer-column i {
+  margin-right: 8px;
 }
 
-.footer-column a i { /* Dimensione delle icone */
-font-size: 20px;
-transition: 0.3s;
+.footer-column a i {
+  font-size: 20px;
+  transition: 0.3s;
 }
 
-.footer-column a i:hover { /* effetto mouse sulle icone */
-transform: scale(1.2);
-color: rgba(170, 78, 177, 0.7);
+.footer-column a i:hover {
+  transform: scale(1.2);
+  color: rgba(170, 78, 177, 0.7);
 }
 
-.footer-bottom { /* testo di chiusura del footer */
-margin-top: 20px;
-font-size: 14px;
-color: #aaa;
+.footer-bottom {
+  margin-top: 20px;
+  font-size: 14px;
+  color: #aaa;
 }
-
-#footer { /* effetto ombra sopra il footer */
-box-shadow: 0px -4px 10px rgba(0, 0, 0, 0.2);
-}
-
 /* css footer */
-
-
