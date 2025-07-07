@@ -839,7 +839,7 @@ button {
 }
 
 button:hover {
-  background: rgba(45, 10, 47, 0.7);
+  background: rgb(80, 2, 84);
 }
 
 .form-group {
