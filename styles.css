@@ -825,7 +825,7 @@ input:focus, textarea:focus, select:focus {
 }
 
 button {
-  background: rgba(170, 78, 177, 0.7);
+  background: rgba(114, 10, 121, 0.7)
   color: white;
   padding: 14px;
   border: none;
@@ -839,7 +839,7 @@ button {
 }
 
 button:hover {
-  background: rgba(106, 28, 111, 0.7);
+  background: rgba(45, 10, 47, 0.7);
 }
 
 .form-group {
