@@ -9,7 +9,7 @@ html {
 
 @font-face {
   font-family: 'Lemon Milk';
-  src: url('fonts/lemonmilk.woff2') format('woff2');
+  src: url('fonts/lemonmilk.otf') format('otf');
   font-display: swap;
 }
 
