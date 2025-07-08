@@ -968,8 +968,14 @@ button:hover {
 }
 
 i[class^="fa"] {
-  font-family: "Font Awesome 6 Free";
-  font-weight: 900;
+  font-family: "Font Awesome 6 Brands", "Font Awesome 6 Free";
+  font-style: normal;
+  font-weight: normal;
+  display: inline-block;
+  visibility: visible;
+  opacity: 1;
+  color: #ddd;
+  font-size: 24px;
 }
 
 .footer-bottom {
