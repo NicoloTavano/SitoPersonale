@@ -9,7 +9,6 @@ html {
 
 h2 {
     font-family: 'LEMON MILK', sans-serif;
-     font-display: swap;
 }
 #fotopersonale {
     border-radius: 100%;
@@ -21,7 +20,6 @@ h2 {
        url('bahnschrift/bahnschrift.woff') format('woff');
   font-weight: normal;
   font-style: normal;
-  font-display: swap;
 }
 /* css informazioni base e immagini */
 body {
@@ -42,7 +40,6 @@ main {
 h2 {
     font-family: 'LEMON MILK', sans-serif;
     text-align: center;
-    font-display: swap;
 }
 /* css intestazione */
 header { /* intestazione */
@@ -752,7 +749,6 @@ iframe {
 
 .container, label, select, input, textarea, button, p {
   font-family: 'LEMON MILK', sans-serif;
-   font-display: swap;
 }
 
 .container p {
