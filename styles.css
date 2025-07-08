@@ -867,7 +867,8 @@ button:hover {
 }
 
 .bottone-fluttuante i {
-  color: rgba(170, 78, 177, 1);
+  font-size: 18px;
+  color: rgba(170, 78, 177, 1); /* viola iniziale */
   transition: color 0.3s ease;
 }
 
@@ -877,7 +878,7 @@ button:hover {
 }
 
 .bottone-fluttuante:hover i {
-  color: white;
+  color: white; /* bianco in hover */
 }
 
 @media (max-width: 480px) {
