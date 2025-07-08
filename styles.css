@@ -795,7 +795,7 @@ input:focus, textarea:focus, select:focus {
   align-items: flex-start;
   gap: 14px; /* Spazio tra checkbox e testo */
   font-family: 'Bahnschrift', sans-serif;
-  font-size: 14px;
+  font-size: 12px;
   color: #000;
   margin-top: 12px;
   max-width: 100%;
