@@ -9,6 +9,7 @@ html {
 
 h2 {
     font-family: 'LEMON MILK', sans-serif;
+     font-display: swap;
 }
 #fotopersonale {
     border-radius: 100%;
@@ -41,6 +42,7 @@ main {
 h2 {
     font-family: 'LEMON MILK', sans-serif;
     text-align: center;
+    font-display: swap;
 }
 /* css intestazione */
 header { /* intestazione */
