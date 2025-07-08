@@ -790,29 +790,26 @@ input:focus, textarea:focus, select:focus {
   box-shadow: 0 0 8px rgba(170, 78, 177, 0.5);
 }
 
-.checkbox {
+.checkbox-wrapper {
   display: flex;
-  align-items: center; 
-  gap: 8px;
+  align-items: flex-start; /* per testo multilinea allineato in alto */
+  gap: 10px;
   font-family: 'Bahnschrift', sans-serif;
   font-size: 13px;
   color: #000;
   margin-top: 10px;
-  flex-wrap: nowrap;
 }
 
-.checkbox input[type="checkbox"] {
-  flex-shrink: 0;
-  margin: 0;
+.checkbox-wrapper input[type="checkbox"] {
+  margin-top: 2px;
 }
 
-.checkbox label {
-  flex-grow: 1;
-  text-align: left;
+.checkbox-wrapper label {
   line-height: 1.4;
   word-break: break-word;
-  display: block;
+  flex: 1;
 }
+
 
 
 button {
