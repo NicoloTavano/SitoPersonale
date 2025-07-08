@@ -868,7 +868,7 @@ button:hover {
 
 .bottone-fluttuante i {
   font-size: 18px;
-  color: rgb(151, 46, 158); 
+  color: black; 
   transition: color 0.3s ease;
 }
 
