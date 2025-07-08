@@ -7,14 +7,6 @@ html {
     overflow-x: hidden;
   }
 
-
-@font-face {
-  font-family: 'Lemon Milk';
-  src: url('fonts/lemonmilk.woff2') format('woff2');
-  font-display: swap;
-}
-
-
 h2 {
     font-family: 'LEMON MILK', sans-serif;
 }
