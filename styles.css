@@ -149,7 +149,7 @@ background-color: rgba(170, 78, 177, 0.7); /* riquadro viola */
     width: 100%;
     z-index: -1;
 
-    background-image: url('jpg/sfondo superiore.jpg');
+    background-image: url('jpg/sfondo superiore.webp');
     background-size: cover;
     background-position: top center;
     background-repeat: no-repeat;
