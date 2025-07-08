@@ -957,13 +957,18 @@ button:hover {
 .footer-column a i {
   font-size: 24px;
   color: #ddd;
-  transition: 0.3s;
   display: inline-block;
+  visibility: visible;
+  opacity: 1;
 }
 
 .footer-column a i:hover {
   transform: scale(1.2);
   color: rgba(170, 78, 177, 0.7);
+}
+
+i[class^="fa"] {
+  font-family: "Font Awesome 6 Brands";
 }
 
 .footer-bottom {
