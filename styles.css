@@ -790,24 +790,28 @@ input:focus, textarea:focus, select:focus {
   box-shadow: 0 0 8px rgba(170, 78, 177, 0.5);
 }
 
-.checkbox-wrapper {
+.checkbox-layout {
   display: flex;
-  align-items: flex-start; /* per testo multilinea allineato in alto */
-  gap: 10px;
+  align-items: flex-start;
+  gap: 14px; /* Spazio tra checkbox e testo */
   font-family: 'Bahnschrift', sans-serif;
-  font-size: 13px;
+  font-size: 14px;
   color: #000;
-  margin-top: 10px;
+  margin-top: 12px;
+  max-width: 100%;
 }
 
-.checkbox-wrapper input[type="checkbox"] {
-  margin-top: 2px;
+.checkbox-layout input[type="checkbox"] {
+  width: 18px;      /* Dimensione visiva aumentata */
+  height: 18px;
+  margin-top: 3px;
+  flex-shrink: 0;   /* Evita che si riduca */
 }
 
-.checkbox-wrapper label {
-  line-height: 1.4;
+.checkbox-layout label {
+  line-height: 1.5;
   flex: 1;
-  word-break: normal; 
+  word-break: normal;
   overflow-wrap: break-word;
   white-space: normal;
 }
