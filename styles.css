@@ -806,8 +806,10 @@ input:focus, textarea:focus, select:focus {
 
 .checkbox-wrapper label {
   line-height: 1.4;
-  word-break: break-word;
   flex: 1;
+  word-break: normal; 
+  overflow-wrap: break-word;
+  white-space: normal;
 }
 
 
