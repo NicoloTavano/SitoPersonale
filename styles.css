@@ -752,6 +752,7 @@ iframe {
 
 .container, label, select, input, textarea, button, p {
   font-family: 'LEMON MILK', sans-serif;
+   font-display: swap;
 }
 
 .container p {
