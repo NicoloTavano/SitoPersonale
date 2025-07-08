@@ -939,7 +939,7 @@ button:hover {
 
 .footer-column p,
 .footer-column a {
-  color: #ddd;
+  color: #e0e0e0;
   text-decoration: none;
   display: block;
   margin: 5px 0;
@@ -955,11 +955,10 @@ button:hover {
 }
 
 .footer-column a i {
-  font-size: 24px;
+  font-size: 18px;
   color: #ddd;
   display: inline-block;
-  visibility: visible;
-  opacity: 1;
+  transition: transform 0.3s;
 }
 
 .footer-column a i:hover {
