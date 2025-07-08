@@ -866,8 +866,17 @@ button:hover {
   gap: 8px;
 }
 
+.bottone-fluttuante i {
+  color: rgba(170, 78, 177, 1);
+  transition: color 0.3s ease;
+}
+
 .bottone-fluttuante:hover {
   background-color: rgba(170, 78, 177, 1);
+  color: white;
+}
+
+.bottone-fluttuante:hover i {
   color: white;
 }
 
