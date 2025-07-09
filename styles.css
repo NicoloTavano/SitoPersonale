@@ -876,6 +876,7 @@ button:hover {
   font-size: 18px;
   color: black;
   transition: color 0.3s ease;
+  display: none; 
 }
 
 .bottone-fluttuante:hover {
@@ -887,22 +888,9 @@ button:hover {
   color: white;
 }
 
-/* Mostra solo su mobile */
-.mobile-only {
-  display: inline !important;
-}
-
-/* Mostra solo su desktop */
-.desktop-only {
-  display: none !important;
-}
-
-@media (min-width: 481px) {
-  .mobile-only {
-    display: none !important;
-  }
-  .desktop-only {
-    display: inline !important;
+@media (max-width: 480px) {
+  .testo-bottone {
+    display: none; 
   }
 
   .bottone-fluttuante {
@@ -911,7 +899,7 @@ button:hover {
   }
 
   .bottone-fluttuante i {
-    display: inline;
+    display: inline; 
     font-size: 20px;
   }
 }
