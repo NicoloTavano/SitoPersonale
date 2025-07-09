@@ -887,15 +887,22 @@ button:hover {
   color: white;
 }
 
-@media (min-width: 481px) {
-  .bottone-fluttuante i {
-    display: none;
-  }
+/* Mostra solo su mobile */
+.mobile-only {
+  display: inline !important;
 }
 
-@media (max-width: 480px) {
-  .testo-bottone {
-    display: none;
+/* Mostra solo su desktop */
+.desktop-only {
+  display: none !important;
+}
+
+@media (min-width: 481px) {
+  .mobile-only {
+    display: none !important;
+  }
+  .desktop-only {
+    display: inline !important;
   }
 
   .bottone-fluttuante {
