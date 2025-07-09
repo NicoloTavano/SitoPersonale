@@ -874,8 +874,9 @@ button:hover {
 
 .bottone-fluttuante i {
   font-size: 18px;
-  color: black; 
+  color: black;
   transition: color 0.3s ease;
+  display: none; /* NASCOSTO di default */
 }
 
 .bottone-fluttuante:hover {
@@ -884,12 +885,12 @@ button:hover {
 }
 
 .bottone-fluttuante:hover i {
-  color: white; 
+  color: white;
 }
 
 @media (max-width: 480px) {
   .testo-bottone {
-    display: none;
+    display: none; /* nasconde il testo su mobile */
   }
 
   .bottone-fluttuante {
@@ -898,6 +899,7 @@ button:hover {
   }
 
   .bottone-fluttuante i {
+    display: inline; /* mostra solo su mobile */
     font-size: 20px;
   }
 }
