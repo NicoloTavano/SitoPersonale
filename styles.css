@@ -182,16 +182,6 @@ background-color: rgba(170, 78, 177, 0.7); /* riquadro viola */
     color: rgb(0, 0, 0);
   }
 
-
-.hero-content h2,
-.hero-content p {
-  color: #000;
-  background-color: rgba(255, 255, 255, 0.8); /* sfondo semitrasparente */
-  padding: 10px;
-  border-radius: 5px;
-}
-
-
   .hero-image {
     flex: 1.5;
     position: relative;
