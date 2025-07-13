@@ -30,6 +30,23 @@ h2 {
     text-align: center;
 }
 /* css intestazione */
+
+
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background: #000;
+  color: #fff;
+  padding: 8px 12px;
+  z-index: 1000;
+  font-family: 'Bahnschrift';
+}
+.skip-link:focus {
+  top: 10px;
+}
+
+
 header { /* intestazione */
   position: fixed;
   top: 0;
@@ -164,6 +181,16 @@ background-color: rgba(170, 78, 177, 0.7); /* riquadro viola */
     max-width: 500px;
     color: rgb(0, 0, 0);
   }
+
+
+.hero-content h2,
+.hero-content p {
+  color: #000;
+  background-color: rgba(255, 255, 255, 0.8); /* sfondo semitrasparente */
+  padding: 10px;
+  border-radius: 5px;
+}
+
 
   .hero-image {
     flex: 1.5;

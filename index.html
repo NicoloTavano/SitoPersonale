@@ -1,77 +1,63 @@
 <!DOCTYPE html>
 <html lang="it">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Nic Graphic Portfolio</title>
-  <link rel="preconnect" href="https://fonts.cdnfonts.com">
-  <link rel="preconnect" href="https://cdnjs.cloudflare.com">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-  integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer">
-  <link href="https://fonts.cdnfonts.com/css/lemon-milk" rel="stylesheet">
-  <link href="styles.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-<main>
-<header>
-  <div class="logo">
-    <img src="jpg/logo.webp" alt="Logo" height="50">
-  </div>
+  <a href="#maincontent" class="skip-link">Salta al contenuto principale</a>
 
-  <div class="burger" id="burger">
-    <div class="line"></div>
-    <div class="line"></div>
-    <div class="line"></div>
-  </div>
-
-  <div class="header-info">
-    <nav id="menu">
-      <a href="#chisono">Chi sono</a>
-      <a href="#lemiecompetenze">Le mie competenze</a>
-      <a href="#servizi">I miei servizi</a>
-      <a href="#imieilavori">I miei lavori</a>
-      <a href="#contatti">Contatti</a>
-      <a href="#dovesono">Dove sono</a>
-    </nav>
-  </div>
-</header>
-
-<div class="hero">
-  <div class="hero-content">
-    <h2>Ciao, sono Nicolò Tavano</h2>
-    <p>Benvenuto nel mio sito personale. Qui puoi scoprire chi sono, cosa faccio e come contattarmi.</p>
-  </div>
-  <div class="hero-image">
-    <img src="jpg/io.png" alt="Immagine">
-  </div>
-</div>
-
-<div class="shape-divider" style="margin-top: 100vh;">
-  <svg xmlns="http://www.w3.org/2000/svg" class="sezione-normale__shape" viewBox="0 0 1400 151" fill="none">
-    <path d="M713.315 0C513.852 0 155.496 42.6667 0 64V151H1400V63.5C1252.55 42.1667 912.778 0 713.315 0Z" fill="#1E0133"/>
-  </svg>
-</div>
-
-<section class="main-section">
-
-  <div id="chisono" class="section">
-    <div class="container chisono-content">
-      <div class="chisono-logo">
-        <img src="jpg/logo.webp" alt="Logo di Nicolò Tavano" class="logo-3d">
-      </div>
-      <div class="chisono-text">
-        <h2>Chi sono</h2>
-        <p>
-          Sono Nicolò Tavano, Graphic Designer con una mente creativa e un occhio sempre attento ai dettagli.<br>
-          Trasformo idee in identità visive forti e coerenti, curando ogni progetto con equilibrio tra estetica e funzionalità.<br>
-          Dal branding al digital, metto passione, precisione e ispirazione in ogni sfida.<br>
-          Sempre aperto a nuove collaborazioni che sappiano fare la differenza.
-        </p>
-      </div>
+  <header role="banner">
+    <div class="logo">
+      <img src="jpg/logo.webp" alt="Logo di Nicolò Tavano" height="50">
     </div>
-  </div>
+
+    <div class="burger" id="burger">
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+    </div>
+
+    <nav id="menu" role="navigation" aria-label="Menu principale">
+      <a href="#chisono" tabindex="0">Chi sono</a>
+      <a href="#lemiecompetenze" tabindex="0">Le mie competenze</a>
+      <a href="#servizi" tabindex="0">I miei servizi</a>
+      <a href="#imieilavori" tabindex="0">I miei lavori</a>
+      <a href="#contatti" tabindex="0">Contatti</a>
+      <a href="#dovesono" tabindex="0">Dove sono</a>
+    </nav>
+  </header>
+
+  <main id="maincontent">
+    <section class="hero" aria-label="Sezione introduttiva">
+      <div class="hero-content">
+        <h2>Ciao, sono Nicolò Tavano</h2>
+        <p>Benvenuto nel mio sito personale. Qui puoi scoprire chi sono, cosa faccio e come contattarmi.</p>
+      </div>
+      <div class="hero-image">
+        <img src="jpg/io.png" alt="Foto di Nicolò Tavano" id="fotopersonale">
+      </div>
+    </section>
+
+    <section id="chisono" role="region" aria-label="Chi sono">
+      <div class="container chisono-content">
+        <div class="chisono-logo">
+          <img src="jpg/logo.webp" alt="Logo di Nicolò Tavano" class="logo-3d">
+        </div>
+        <div class="chisono-text">
+          <h2>Chi sono</h2>
+          <p>
+            Sono Nicolò Tavano, Graphic Designer con una mente creativa e un occhio sempre attento ai dettagli.<br>
+            Trasformo idee in identità visive forti e coerenti, curando ogni progetto con equilibrio tra estetica e funzionalità.<br>
+            Dal branding al digital, metto passione, precisione e ispirazione in ogni sfida.<br>
+            Sempre aperto a nuove collaborazioni che sappiano fare la differenza.
+          </p>
+        </div>
+      </div>
+    </section>
 
   <div id="lemiecompetenze" class="section">
     <div class="container">

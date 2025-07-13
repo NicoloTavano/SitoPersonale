@@ -22,6 +22,14 @@
       });
     });
 
+document.addEventListener('keydown', function(e) {
+  if (e.key === 'Enter') {
+    const burger = document.getElementById('burger');
+    burger.click();
+  }
+});
+
+    
     // Galleria modale
     window.openGallery = (imgSrc) => {
       modalImg.src = imgSrc;
