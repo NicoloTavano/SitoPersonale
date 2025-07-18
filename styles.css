@@ -1,5 +1,5 @@
 html {
-    scroll-padding-top: 90px; /* Un po' più dei 70px della navbar */
+    scroll-padding-top: 90px; 
     scroll-behavior: smooth;
   }
 
@@ -30,7 +30,7 @@ h2 {
     text-align: center;
 }
 /* css intestazione */
-header { /* intestazione */
+header { 
   position: fixed;
   top: 0;
   left: 0;
@@ -48,20 +48,20 @@ header { /* intestazione */
 height: 50px;
 }
 
-.header-info nav a {  /* stile per i link di navigazione */
+.header-info nav a {  
  font-family: 'LEMON MILK', sans-serif;
 color: rgb(255, 255, 255);
-text-decoration: none;  /* no sottolineatura */
+text-decoration: none; 
 margin: 0 15px;
 font-size: 18px;
 font-weight: bold;
 padding: 8px 12px;
 border-radius: 5px;
-transition: all 0.3s ease-in-out; /* transizione fluida per l'opacità */
+transition: all 0.3s ease-in-out; 
 }
 
 .header-info nav a:hover {
-background-color: rgba(170, 78, 177, 0.7); /* riquadro viola */
+background-color: rgba(170, 78, 177, 0.7); 
   color: white;
 }
 
@@ -150,7 +150,7 @@ background-color: rgba(170, 78, 177, 0.7); /* riquadro viola */
     flex-direction: column;
     justify-content: center;
     padding: 60px;
-    margin-left: 250px; /* Sposta verso destra */
+    margin-left: 250px; 
   }
 
   .hero-content h2 {
@@ -207,9 +207,9 @@ background-color: rgba(170, 78, 177, 0.7); /* riquadro viola */
     align-items: center;
 
     width: 100%;
-    height: 100vh; /* altezza intera viewport */
+    height: 100vh; 
     padding: 0 20px;
-    margin-top: 70px; /* per compensare la header fissa */
+    margin-top: 70px; 
   }
 
   .hero-image {
@@ -231,14 +231,14 @@ background-color: rgba(170, 78, 177, 0.7); /* riquadro viola */
 }
 
   .hero-content h2 {
-   font-size: 2.2rem; /* leggermente più grande */
+   font-size: 2.2rem; 
     line-height: 1.3;
     max-width: 90%;
     margin-bottom: 15px;
   }
 
   .hero-content p {
-   font-size: 1.2rem; /* più leggibile */
+   font-size: 1.2rem; 
     line-height: 1.6;
     max-width: 95%;
     margin: 0 auto;
@@ -247,7 +247,7 @@ background-color: rgba(170, 78, 177, 0.7); /* riquadro viola */
   .shape-divider {
     margin-top: 0 !important;
     position: relative;
-    top: -1px; /* evita eventuali spazi visivi */
+    top: -1px; 
   }
 }
 
@@ -279,23 +279,23 @@ background-color: rgba(170, 78, 177, 0.7); /* riquadro viola */
 
 
 /* css contenitori */
-.container {   /* larghezza della pagina */
+.container {   
     width: 70%; 
     max-width: 1200px;
-    margin: 0 auto; /* centra il contenitore */
-    padding: 10px 10px; /* spaziatura interna */
+    margin: 0 auto; 
+    padding: 10px 10px; 
 }
 
 .section {   /* contenitore */
     background: rgb(255, 255, 255);
-    border-radius: 10px; /* bordi arrotondati */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* ombra leggera del contenitore */
+    border-radius: 10px; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center; /* opzionale, se vuoi centrare anche verticalmente */
-    max-width: 800px;        /* limita la larghezza per un layout più leggibile */
-    margin: 0 auto;          /* centra orizzontalmente il contenitore */
+    justify-content: center; 
+    max-width: 800px;    
+    margin: 0 auto;         
     padding: 20px 30px;
     text-align: justify;
     font-size: 16px;
@@ -312,12 +312,12 @@ background-color: rgba(170, 78, 177, 0.7); /* riquadro viola */
 
 @media (max-width: 768px) {
   .container {
-    width: 100%; /* contenitore generale: prende tutto */
+    width: 100%; 
     padding: 0;
   }
 
   .section {
-    width: 80%; /* <== restringe visivamente la sezione */
+    width: 80%; 
     max-width: 90%;
     margin: 20px auto;
     padding: 15px;
@@ -340,7 +340,7 @@ background-color: rgba(170, 78, 177, 0.7); /* riquadro viola */
 }
 
 .section:first-of-type {
-    margin-top: 100px; /* Aggiunge più spazio sopra solo alla prima */
+    margin-top: 100px; 
 }
 
 /* css contenitori */
@@ -793,7 +793,7 @@ input:focus, textarea:focus, select:focus {
 .checkbox-layout {
   display: flex;
   align-items: flex-start;
-  gap: 14px; /* Spazio tra checkbox e testo */
+  gap: 14px; 
   font-family: 'Bahnschrift', sans-serif;
   font-size: 12px;
   color: #000;
@@ -802,10 +802,10 @@ input:focus, textarea:focus, select:focus {
 }
 
 .checkbox-layout input[type="checkbox"] {
-  width: 18px;      /* Dimensione visiva aumentata */
+  width: 18px;   
   height: 18px;
   margin-top: 3px;
-  flex-shrink: 0;   /* Evita che si riduca */
+  flex-shrink: 0;  
 }
 
 .checkbox-layout label {
